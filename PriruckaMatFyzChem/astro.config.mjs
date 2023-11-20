@@ -16,10 +16,17 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{
 							label: 'Logaritmy',
-							autogenerate: {directory: 'matematika/logaritmy'},
+							items: [
+								{ label: 'Úvod', link: 'matematika/logaritmy/uvod', badge: { text: "Experimentální", variant: "caution"}},
+								{ label: 'Přirozený logaritmus', link: 'matematika/logaritmy/prirozenylogaritmus'},
+							]
+						},
+						{
+							label: 'Komplexní čísla',
+							items: [
+								{ label: 'Úvod', link: 'matematika/komplexnicisla/uvod'}
+							]
 						}
-						/*{ label: 'Exponencionální rovnice', link: '/matematika/exponencionalnirovnice/' },
-						{ label: 'Logaritmy', link: '/matematika/logaritmy/' },*/
 					],
 				},
 				{
@@ -27,11 +34,15 @@ export default defineConfig({
 					items: [
 						{
 							label: 'Newtonovy Zákony',
-							autogenerate: { directory: 'fyzika/newtonovyzakony' },
+							items: [
+								{ label: "Úvod", link: "fyzika/newtonovyzakony/uvod"},
+							]
 						},
 						{
 							label: 'Keplerovy Zákony',
-							autogenerate: { directory: 'fyzika/keplerovyzakon' },
+							items: [
+								{ label: "Úvod", link: "fyzika/keplerovyzakony/uvod"}
+							]
 						},
 					],
 				},
