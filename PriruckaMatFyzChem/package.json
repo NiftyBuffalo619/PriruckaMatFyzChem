@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.1.5",
     "@astrojs/starlight": "^0.12.1",
     "astro": "^3.2.3",
+    "katex": "^0.16.9",
     "sharp": "^0.32.5"
   }
 }
