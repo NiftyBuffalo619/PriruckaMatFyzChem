@@ -7,4 +7,31 @@ V matematice existuje řada vět o logaritmech, které hrají klíčovou roli p�
 Tyto věty nám umožňují proniknout do složitých vztahů mezi mocninami a odhalit elegantní spojitosti, které nacházíme v matematickém světě.
 ## Základní věty
 
-Pro každé <Latex formula="a \in \Reals \setminus \Set{1}" /> a libovolné kladné reálné číslo **x** platí: <Latex formula="a^{log _{a} x} = x" />
+### 1. Věta
+Pro každé <Latex formula="a \in \Reals^+ \setminus \Set{1}" /> a libovolné kladné reálné číslo **x** platí: <Latex formula="a^{log _{a} x} = x" />
+Příklad: <Latex formula="2^{log _{2} 8} = 8 \implies 2^3 = 8" />
+
+
+---
+### 2. Věta
+Pro každé <Latex formula="a \in \Reals^+ \setminus \Set{1}" /> a libovolná  kladná reálná čísla **x** , **y** platí: <Latex formula="log _{a} xy = log_{a} x + log_{a} y" />
+Příklad: 
+Předpokládejme, že <Latex formula="a = 2, x = 4, y = 8" /> Podle daného vzorce:
+<Latex formula="log _{2} (4 \cdot 8 ) = log _{2} (4) + log _{2} (8)" /> 
+<Latex formula="log _{2} (32) = 2 + 3" />
+<Latex formula="5 = 5" />
+1. Spočítáme součin uvnitř logaritmu Logaritmus základu 2 ze 32 je 5, protože <Latex formula="2^5 = 32" />
+2. Spočítáme obva logaritmy zvlášť <Latex formula="log _{2} 4 = 2" /> <Latex formula="log _{2} 8 = 3" />
+3. Sečteme a porovnáme výsledky <Latex formula="5 = 2 + 3" />
+---
+### 3. Věta
+Pro každé <Latex formula="a \in \Reals^+ \setminus \Set{1}" /> a libovolná  kladná reálná čísla **x** , **y** platí: <Latex formula="log _{a} (\frac{x}{y}) = log_{a} x - log_{a} y" />
+Příklad:
+Předpokládejme, že <Latex formula="a = 3, x = 27, y = 9" /> Podle daného vzorce: <Latex formula="log _{3} (\frac{27}{9}) = log _{3} (27) - log _{3} (9)" />
+1. Vypočítáme obě strany <Latex formula="log _{3} 3 = 3 - 2" />
+2. <Latex formula="1 = 3 - 2" />
+3. <Latex formula="1 = 1" />
+---
+### 4. Věta
+Pro každé <Latex formula="a \in \Reals^+ \setminus \Set{1}" /> kladné číslo **x** a libovolné realné číslo **y** platí: <Latex formula="log _{a} (x^y) = y \cdot log_{a} x" />
+Příklad:

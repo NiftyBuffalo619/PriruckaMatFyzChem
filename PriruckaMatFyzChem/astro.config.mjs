@@ -15,6 +15,31 @@ export default defineConfig({
       items: [
       // Each item here is one entry in the navigation menu.
       {
+        label: 'Goniometrické funkce',
+        items: [{
+          label: 'Úvod',
+          link: 'matematika/goniometrickefuknce/uvod',
+          badge: {
+            text: "Nové",
+            variant: "success"
+          }
+        }, {
+          label: 'Fuknce Sinus',
+          link: 'matematika/goniometrickefunkce/sinus'
+        }, {
+          label: 'Funkce Cosinus',
+          link: 'matematika/goniometrickefunkce/cosinus'
+        },
+        {
+          label: 'Funkce Tangens',
+          link: 'matematika/goniometrickefunkce/tangens'
+        },
+        {
+          label: 'Funkce Cotangens',
+          link: 'matematika/goniometrickefunkce/cotangens'
+        }]
+      },
+      {
         label: 'Logaritmy',
         items: [{
           label: 'Úvod',
