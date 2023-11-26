@@ -11,7 +11,13 @@ export default defineConfig({
       github: 'https://github.com/withastro/starlight'
     },
     sidebar: [{
-      label: 'Matematika',
+      label: "📚O Příručce",
+      items: [{
+        label: "Úvod",
+        link: "uvod/uvod"
+      }]
+    },{
+      label: 'πMatematika',
       items: [
       // Each item here is one entry in the navigation menu.
       {
@@ -54,7 +60,33 @@ export default defineConfig({
         }, {
           label: 'Věty o logaritmech',
           link: 'matematika/logaritmy/vetyologaritmech'
-        }]
+        }, {
+          label: 'Příklady',
+          items: [{
+            label: 'Příklady Lehké',
+            link: 'matematika/logaritmy/priklady/lehke',
+            badge: {
+              text: "Lehké",
+              variant: "success",
+            }
+          },{
+            label: 'Příklady Střední',
+            link: 'matematika/logaritmy/priklady/stredni',
+            badge: {
+              text: "Střední",
+              variant: "caution",
+            }
+          }, {
+            label: 'Příklady Těžké',
+            link: 'matematika/logaritmy/priklady/tezke',
+            badge: {
+              text: "Těžké",
+              variant: "danger",
+            },
+          }]
+        }
+      
+      ], 
       }, {
         label: 'Komplexní čísla',
         items: [{
@@ -63,7 +95,7 @@ export default defineConfig({
         }]
       }]
     }, {
-      label: 'Fyzika',
+      label: '⚛Fyzika',
       items: [{
         label: 'Newtonovy Zákony',
         items: [{
@@ -75,6 +107,15 @@ export default defineConfig({
         items: [{
           label: "Úvod",
           link: "fyzika/keplerovyzakony/uvod"
+        }]
+      }]
+    }, {
+      label: "🧪Chemie",
+      items: [{
+        label: "Organická Chemie",
+        items: [{
+          label: "Úvod",
+          link: "chemie/organickachemie/uvod"
         }]
       }]
     }]
