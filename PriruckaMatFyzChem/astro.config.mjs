@@ -21,6 +21,16 @@ export default defineConfig({
       items: [
       // Each item here is one entry in the navigation menu.
       {
+        label: "Množiny a Logika",
+        items: [{
+          label: "Symboly",
+          link: "matematika/mnozinyalogika/symboly"
+        },{
+          label: "Číselné obory",
+          link: "matematika/mnozinyalogika/ciselneobory",
+        }]
+      },
+      {
         label: 'Goniometrické funkce',
         items: [{
           label: 'Úvod',
