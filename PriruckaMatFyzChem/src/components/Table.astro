@@ -1,0 +1,49 @@
+---
+import katex from "katex";
+
+const { formula = '' } = Astro.props;
+const html = katex.renderToString(formula, {throwOnError: false});
+
+const { firstLine = "" } = Astro.props; 
+const { secondLine = "" } = Astro.props; 
+const { thirdLine = "" } = Astro.props; 
+const { fourthLine = "" } = Astro.props; 
+
+const firstLineRender = firstLine;
+const secondLineRender = secondLine;
+const thirdLineRender = thirdLine;
+const fourthLineRender = fourthLine;
+---
+
+
+<table>
+    <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>
+            <div class="text-center">
+            <span set:html={html} class="" style="font-size:x-large" />
+            </div>
+        </th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td> {firstLineRender} </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td> {secondLineRender} </td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td> {thirdLineRender} </td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td> {fourthLineRender} </td>
+    </tr>
+</table>

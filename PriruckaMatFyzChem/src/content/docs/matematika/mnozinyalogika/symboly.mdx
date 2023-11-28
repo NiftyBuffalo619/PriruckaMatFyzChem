@@ -1,7 +1,11 @@
 ---
-title: Symboly množin
+title: Symboly
 ---
 import Latex from "../../../../components/Latex.astro";
+import Table from "../../../../components/Table.astro";
+import NegationTable from "../../../../components/NegationTable.astro";
+
+# Symboly Množin
 
 | Symbol | Význam | Příklad |
 | --- | --- | --- |
@@ -13,3 +17,12 @@ import Latex from "../../../../components/Latex.astro";
 | <Latex formula="\supset" /> | Vlastní Nadmnožina | <Latex formula="A \supset B" /> A je vlastní nadmnoužinou B |
 | <Latex formula="\cup" /> | Sjednocení množin | <Latex formula="A \cup B" /> A sjednocení B |
 | <Latex formula="\cap" /> | Průnik množin | <Latex formula="A \cap B" /> A průnik B |
+
+# Symboly Výrokové Logiky
+| Symbol | Význam | Příklad | Pravdivostní tabulka |
+| --- | --- | --- | --- |
+| <Latex formula="\land" /> | Konjunkce | <Latex formula="A \land B" /> |  <Table formula="A \land B" firstLine="1" secondLine="0" thirdLine="0" fourthLine="0" /> |
+| <Latex formula="\lor" /> | Disjunkce | <Latex formula="A \lor B" /> | <Table formula="A \lor B" firstLine="1" secondLine="1" thirdLine="1" fourthLine="0" /> |
+| <Latex formula="\implies" /> | Implikace | <Latex formula="A \implies B" /> | <Table formula="A \implies B" firstLine="1" secondLine="0" thirdLine="1" fourthLine="1" /> |
+| <Latex formula="\iff" /> | Ekvivalence | <Latex formula="A \iff B" /> | <Table formula="A \iff B" firstLine="1" secondLine="0" thirdLine="0" fourthLine="1" /> |
+| <Latex formula="\neg" /> | Negace | <Latex formula="\neg A" /> | <NegationTable formula="\neg A" /> |
