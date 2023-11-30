@@ -28,6 +28,9 @@ export default defineConfig({
         },{
           label: "Číselné obory",
           link: "matematika/mnozinyalogika/ciselneobory",
+        }, {
+          label: "Alfabeta",
+          link: "matematika/mnozinyalogika/alfabeta",
         }]
       },
       {
