@@ -31,6 +31,12 @@ export default defineConfig({
         }, {
           label: "Alfabeta",
           link: "matematika/mnozinyalogika/alfabeta",
+        }, {
+          label: "Množiny Příklady",
+          items: [{
+            label: "Příklady",
+            link: "matematika/mnozinyalogika/prikladymnozinylehke",
+          }]
         }]
       },
       {

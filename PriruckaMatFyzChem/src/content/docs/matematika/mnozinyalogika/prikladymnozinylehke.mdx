@@ -1,0 +1,27 @@
+---
+title: Příklady na Množiny
+---
+import Latex from "../../../../components/Latex.astro";
+
+
+## 1. Příklad
+ <Latex formula="A = \{ x \in \natnums; x \leq 6 \}" />
+ <details>
+    <summary>Zobrazit Řešení</summary>
+    <Latex formula="A = \{ 1;2;3;4;5;6 \}" />
+ </details>
+## 2. Příklad
+ <Latex formula="B = \{x \in \mathbb{Q}; 3x = 5 \}" />
+ <details>
+    <summary>Zobrazit Řešení</summary>
+    <Latex formula="B = \{ \frac 3 5 \}" />
+ </details>
+## 3. Příklad
+ <Latex formula="C = \{x \in \Z; 3x = 5 \}" />
+ <details>
+    <summary>Zobrazit Řešení</summary>
+    <Latex formula="3x = 5, x \in \Z" />
+    <Latex formula="x \notin \Z" />
+    x Nemá v oboru celých čísel žádné řešení, proto množina C je množina prázdná
+    <Latex formula="C = \{ \varnothing \}" />
+ </details>
