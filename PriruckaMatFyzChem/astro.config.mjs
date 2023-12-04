@@ -116,16 +116,46 @@ export default defineConfig({
     }, {
       label: '⚛Fyzika',
       items: [{
-        label: 'Newtonovy Zákony',
+        label: 'Mechanika',
         items: [{
           label: "Úvod",
-          link: "fyzika/newtonovyzakony/uvod"
-        }]
+          link: "fyzika/mechanika/uvod",
+        }, {
+          label: "Klasická Mechanika",
+          items: [{
+            label: "Úvod",
+            link: "fyzika/mechanika/uvod"
+          }]
+        }, {
+          label: "Kinematika",
+          items: [{
+            label: "Úvod",
+            link: "fyzika/mechanika/kinematika/uvod",
+          }]
+        }, {
+          label: "Dynamika",
+          items: [{
+            label: "Úvod",
+            link: "fyzika/mechanika/dynamika/uvod",
+          }]
+        }, {
+          label: "Kvantová Mechanika",
+          items: [{
+            label: "Úvod",
+            link: "fyzika/mechanika/kvantovamechanika"
+          }]
+        },]
       }, {
-        label: 'Keplerovy Zákony',
+        label: "AstroFyzika",
         items: [{
           label: "Úvod",
-          link: "fyzika/keplerovyzakony/uvod"
+          link: "fyzika/astrofyzika/uvod"
+        }, {
+          label: 'Keplerovy Zákony',
+          items: [{
+            label: "Úvod",
+            link: "fyzika/keplerovyzakony/uvod"
+          }]
         }]
       }]
     }, {
