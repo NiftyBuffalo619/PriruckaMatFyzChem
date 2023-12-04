@@ -124,20 +124,32 @@ export default defineConfig({
           label: "Klasická Mechanika",
           items: [{
             label: "Úvod",
-            link: "fyzika/mechanika/uvod"
-          }]
-        }, {
-          label: "Kinematika",
-          items: [{
-            label: "Úvod",
-            link: "fyzika/mechanika/kinematika/uvod",
-          }]
-        }, {
-          label: "Dynamika",
-          items: [{
-            label: "Úvod",
-            link: "fyzika/mechanika/dynamika/uvod",
-          }]
+            link: "fyzika/mechanika/klasickamechanika/uvod"
+          }, {
+            label: "Kinematika",
+            items: [{
+              label: "Úvod",
+              link: "fyzika/mechanika/kinematika/uvod",
+            }]
+          }, {
+            label: "Dynamika",
+            items: [{
+              label: "Úvod",
+              link: "fyzika/mechanika/dynamika/uvod",
+            }, {
+              label: "Newtonovy zákony",
+              items: [{
+                label: "Zákony setrvačnosti",
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsetrvacnosti"
+              }, {
+                label: "Zákon Síly",
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsily"
+              }, {
+                label: "Akce a reakce",
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonakceareakce"
+              }]
+            }]
+          },]
         }, {
           label: "Kvantová Mechanika",
           items: [{
