@@ -1,3 +1,41 @@
 ---
 title: Práce s mnohočleny
 ---
+import Latex from "../../../../components/Latex.astro";
+
+Práce s mnohočleny patří k základním dovednostem v algebře, proto je dobré je dobře znát.
+## Sčítání, Odčítání Mnohočlenů
+### 1. Příklad
+<Latex formula="(3x^2 - 2x + 5) + (2x^2 + 4x - 1)" />
+Prvně odstraníme závorky
+<Latex formula="3x^2 - 2x + 5 + 2x^2 + 4x - 1" />
+Pro sčítání mnohočlenů se jednoduše sčítají členy se stejnými mocninami proměnné.
+<Latex formula="5x^2 + 2x + 4" />
+
+
+### 2. Příklad 
+<Latex formula="(3x^2 - 2x + 5) - (2x^2 + 4x - 1)" />
+Prvně odstraníme závorky Pokud je před výrazem - změníme znaménko každého člena výrazu
+<Latex formula="3x^2 - 2x + 5 - 2x^2 - 4x + 1" />
+Pro odčítání platí totéž co sčítání.
+<Latex formula="x^2 - 6x + 6" />
+## Násobení mnohočlenů 
+### 1. Příklad
+<Latex formula="(2x + 3)(3x - 1)" />
+Zde musíme vynásobit každý člen v první závorce každým členem v druhý závorce
+<Latex formula="2x \cdot 3x -2x + 3 \cdot 3x - 3" />
+Nyní vypočítáme a nakonec sečteme a odečteme
+<Latex formula="6x^2 -2x + 9x - 3 " />
+<Latex formula="6x^2 - 7x - 3" />
+## Dělení mnohočlenů
+### 1. Příklad
+<Latex formula="(x^5 - 3x^2 - 4x + 6) : (x^2 - 2) " />
+Postupujeme jako u klasického dělení
+<Latex formula="\space \space \space (x^5 - 3x^2 - 4x + 6 ) : (x^2 - 2) = x^3 + 2x - 3" />
+<Latex formula=" \underline{-(x^5 - 2x^3)} " />
+<Latex formula="\space \space \space \space 2x^2 - 3x^2 -4x + 6 " />
+<Latex formula=" \underline{-(2x^3 \space \space \space \space \space \space \space \space \space \space - 4x)} " />
+<Latex formula="\space \space \space \space \space \space \space \space \space \space \space \space \space - 3x^2 + 6 " />
+<Latex formula=" \space \space \space \space \space \space \space \space\underline{-(-3x^2 + 6)} " />
+<Latex formula="\space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space 
+\space \space \space \space \space \space 0" />
