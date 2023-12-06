@@ -40,7 +40,7 @@ export default defineConfig({
         }]
       },
       {
-        label: 'Goniometrické funkce',
+        label: 'Funkce',
         items: [{
           label: 'Úvod',
           link: 'matematika/goniometrickefuknce/uvod',
@@ -49,7 +49,7 @@ export default defineConfig({
             variant: "success"
           }
         }, {
-          label: 'Fuknce Sinus',
+          label: 'Funkce Sinus',
           link: 'matematika/goniometrickefunkce/sinus'
         }, {
           label: 'Funkce Cosinus',
@@ -65,54 +65,61 @@ export default defineConfig({
         }]
       },
       {
-        label: 'Logaritmy',
+        label: 'Algebra',
         items: [{
-          label: 'Úvod',
-          link: 'matematika/logaritmy/uvod',
-          badge: {
-            text: "Experimentální",
-            variant: "caution"
-          }
-        }, {
-          label: 'Přirozený logaritmus',
-          link: 'matematika/logaritmy/prirozenylogaritmus'
-        }, {
-          label: 'Věty o logaritmech',
-          link: 'matematika/logaritmy/vetyologaritmech'
-        }, {
-          label: 'Příklady',
+          label: "Výrazy",
           items: [{
-            label: 'Příklady Lehké',
-            link: 'matematika/logaritmy/priklady/lehke',
-            badge: {
-              text: "Lehké",
-              variant: "success",
-            }
-          },{
-            label: 'Příklady Střední',
-            link: 'matematika/logaritmy/priklady/stredni',
-            badge: {
-              text: "Střední",
-              variant: "caution",
-            }
-          }, {
-            label: 'Příklady Těžké',
-            link: 'matematika/logaritmy/priklady/tezke',
-            badge: {
-              text: "Těžké",
-              variant: "danger",
-            },
+            label: "Práce s mnohočleny",
+            link: "matematika/vyrazy/pracesmnohocleny"
           }]
-        }
-      
-      ], 
-      }, {
-        label: 'Komplexní čísla',
-        items: [{
-          label: 'Úvod',
-          link: 'matematika/komplexnicisla/uvod'
-        }]
-      }]
+        },{
+          label: "Logaritmy",
+          items: [{
+              label: 'Úvod',
+              link: 'matematika/logaritmy/uvod',
+              badge: {
+                text: "Experimentální",
+                variant: "caution"
+              }
+          }, {
+            label: 'Přirozený logaritmus',
+            link: 'matematika/logaritmy/prirozenylogaritmus'
+          }, {
+            label: 'Věty o logaritmech',
+            link: 'matematika/logaritmy/vetyologaritmech'
+          }, {
+            label: "Příklady",
+            items: [{
+                label: 'Příklady',
+                link: 'matematika/logaritmy/priklady/lehke',
+                badge: {
+                  text: "Lehké",
+                  variant: "success",
+                }
+              }, {
+                label: 'Příklady',
+                link: 'matematika/logaritmy/priklady/stredni',
+                badge: {
+                  text: "Střední",
+                  variant: "caution",
+                }
+              }, {
+                label: 'Příklady',
+                link: 'matematika/logaritmy/priklady/tezke',
+                badge: {
+                  text: "Těžké",
+                  variant: "danger",
+                },
+              }]
+          }]
+        }, {
+          label: "Komplexní čísla",
+          items: [{
+            label: "Úvod",
+            link: "matematika/komplexnicisla/uvod"
+          }]
+        }], 
+      },]
     }, {
       label: '⚛Fyzika',
       items: [{
