@@ -124,6 +124,9 @@ export default defineConfig({
           items: [{
             label: "Úvod",
             link: "matematika/komplexnicisla/uvod"
+          }, {
+            label: "Imaginární jednotka",
+            link: "matematika/komplexnicisla/imaginarnijednotka"
           }]
         }], 
       },]
