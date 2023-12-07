@@ -40,6 +40,13 @@ export default defineConfig({
         }]
       },
       {
+        label: "Elementární teorie čísel",
+        items: [{
+         label: "Dělitelnost",
+         link: "matematika/elementarniteoriecisel/delitelnost"
+        }]
+     },
+      {
         label: 'Funkce',
         items: [{
           label: 'Úvod',
@@ -65,7 +72,7 @@ export default defineConfig({
         }]
       },
       {
-        label: 'Algebra',
+        label: "Algebra",
         items: [{
           label: "Výrazy",
           items: [{
