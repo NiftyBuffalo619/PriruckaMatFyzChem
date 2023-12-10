@@ -156,14 +156,17 @@ export default defineConfig({
             }, {
               label: "Newtonovy zákony",
               items: [{
-                label: "Zákony setrvačnosti",
+                label: "1. Zákon setrvačnosti",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsetrvacnosti"
               }, {
-                label: "Zákon Síly",
+                label: "2. Zákon Síly",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsily"
               }, {
-                label: "Akce a reakce",
+                label: "3. Akce a reakce",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonakceareakce"
+              }, {
+                label: "Hybnost",
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/hybnost"
               }]
             }]
           },]
