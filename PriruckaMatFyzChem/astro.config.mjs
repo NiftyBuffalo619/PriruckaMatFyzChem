@@ -44,6 +44,12 @@ export default defineConfig({
         items: [{
          label: "Dělitelnost",
          link: "matematika/elementarniteoriecisel/delitelnost"
+        }, {
+          label: "Největší společná dělitel",
+          link: "matematika/elementarniteoriecisel/nejvetsispolecnydelitel"
+        }, {
+          label: "Nejmenší společný násobek",
+          link: "matematika/elementarniteoriecisel/nejmensispolecnynasobek"
         }]
      },
       {
