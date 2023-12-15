@@ -1,0 +1,24 @@
+---
+title: Gaussova rovina
+---
+import Latex from "../../../../components/Latex.astro";
+import { Image } from 'astro:assets';
+import Image1 from "../../../../assets/priruckaimages/zobrazenikomplexnihocisla.png";
+
+Gaussova rovina je speciální rovina, která slouží k reprezentaci komplexních čísel.
+Na realné ose (osa **x**) je reprezentováno realná část komplexního čísla (označeno červěně).Na ose **y** je reprezentována imaginární část (označeno modře).
+<Latex formula="\red a + \blue b \blue i" />
+
+
+
+### Zobrazení v Gaussově rovině
+V rovině je označeno komplexní číslo o souřadnicích:
+<Latex formula="z_1 = [ \red 2; \blue 2i]" />
+<Image src={Image1} alt="Zobrazení komplexního čísla" />
+
+### Absolutní hodnota komplexního čísla
+Absolutní hodnota komplexního čísla se definuje jako vzdálenost čísla (bodu z) od počátku (od 0) v Gaussově rovině.
+Její výpočet je odvozen z Pythagorovy věty, protože body A, a z1 je pravoúhlým trojúhelníkem.
+<Latex formula="|z| = \sqrt[]{a^2 + b^2}" />
+V praxi nám poskytuje "velikost" čísla bez ohledu na jeho reálnou nebo imaginární část.
+Je to velmi užitečný koncept k práci s komplexními čísly.

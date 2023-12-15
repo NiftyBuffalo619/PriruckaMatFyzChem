@@ -133,6 +133,9 @@ export default defineConfig({
           }, {
             label: "Imaginární jednotka",
             link: "matematika/komplexnicisla/imaginarnijednotka"
+          }, {
+            label: "Gaussova rovina",
+            link: "matematika/komplexnicisla/gaussovarovina"
           }]
         }], 
       },]
