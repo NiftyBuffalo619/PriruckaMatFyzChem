@@ -169,13 +169,27 @@ export default defineConfig({
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsetrvacnosti"
               }, {
                 label: "2. Zákon Síly",
-                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsily"
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonsily",
+                badge: {
+                  text: "Lehké",
+                  variant: "success"
+                }
               }, {
                 label: "3. Akce a reakce",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonakceareakce"
               }, {
                 label: "Hybnost",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/hybnost"
+              },{
+                label: "Příklady",
+                items: [{
+                  label: "Příklady",
+                  link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/prikladylehke",
+                  badge: {
+                    text: "Lehké",
+                    variant: "success"
+                  }
+                },]
               }]
             }]
           },]

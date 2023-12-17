@@ -7,3 +7,34 @@ import Latex from "../../../../../../../components/Latex.astro";
 Hybnost je fyzikální veličina definovaná jako součin hmotnosti tělesa a jeho rychlosti. Používá se pro vyjadření pohybového stavu tělesa. Matematicky je vyjádřena vzorcem 
 <Latex formula="\overrightarrow{p} = m \cdot \overrightarrow{v}" />
 kde **p** je hybnost, **m** je hmotnost a **v** je rychlost. a jednotka je <Latex formula="1 kg \cdot 1 \frac{m}{s} = kg \cdot m \cdot s^{-1}" />
+
+### Zákon zachování hybnosti 
+Zákona zachování hybnosti říká, že změna hybnosti tělesa je rovna síle působící na těleso násobené časem, což lze matematicky zapsat jako:
+
+<Latex formula="\overrightarrow{F} \cdot t = \overrightarrow{\varDelta p}" />
+Kde delta p  představuje změnu hybnosti. Podle definice hybnosti můžeme tuto rovnici přepsat jako:
+<Latex formula="\overrightarrow{F} \cdot t = m \cdot \overrightarrow{\varDelta v}" />
+Při konstantní hmotnosti tělesa (m) to můžeme dále upravit na:
+<Latex formula="\overrightarrow{F} \cdot t = m \cdot (v_{konečná} - v_{počáteční})" />
+Tato rovnice tedy vystihuje vztah mezi sílou působící na těleso, časem, a změnou jeho hybnosti.
+#### Příklad
+Z pušky o hmotnosti 5kg vyletěla střela o hmostnosti 20g rychlostí 700m/s. Jak velkou rychlostí se začne puška pohybovat, není-li upevněna? 
+<details>
+<summary> Zobrazit řešení </summary>
+Zákon zachování hybnosti říká, že celková hybnost uzavřeného systému před a po události (v tomto případě před a po výstřelu) zůstává konstantní.
+Můžeme to vyjádřit jako:
+<Latex formula="\overrightarrow{p_{1}} = \overrightarrow{p_{2}}" />
+Po dosazení dostáváme 
+<Latex formula="m_{1} \cdot v_{2} = m_{2} \cdot v_{2}" />
+<Latex formula="m_{1} = 5kg ,  m_{2} = 20g = 0,02kg , v_{2} = 700 m \cdot s^{-1} , v_{1} = ?" />
+Po ekvivaletních úpravách dostáváme
+<Latex formula="v_{1} = \frac{m_{2} \cdot v_{2}}{m_{1}}" />
+Dosazením dostáváme 
+<Latex formula="v_{1} = \frac{0,02kg \cdot 700 m \cdot s^{-1}}{5}" />
+<Latex formula="v_{1} \approx 2,8 m \cdot s^{-1}" />
+</details>
+
+### Impuls síly
+Impuls síly  je v kontextu hybnosti změna hybnosti tělesa způsobená působením vnější síly po určitou dobu. Matematicky lze impuls síly vyjádřit jako:
+<Latex formula="\varDelta p = F \cdot \varDelta t" />
+Kde: **delta p** je Impuls síly , **F** je síla působící na těleso, **delta t** je doba působení této síly.
