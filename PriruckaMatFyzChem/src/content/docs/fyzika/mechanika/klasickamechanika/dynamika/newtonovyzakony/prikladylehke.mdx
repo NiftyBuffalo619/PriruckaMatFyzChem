@@ -1,4 +1,36 @@
 ---
 title: Lehké příklady
 ---
+import Latex from "../../../../../../../components/Latex.astro";
 
+import { Icon } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+    <Card title="Poznámka" icon="document">
+        Pro zjednodušení použivejte počítejte s tihovým zrychlením 
+        <Latex formula="g \approx 10 \space m \cdot s^{-2}" />
+    </Card>
+</CardGrid>
+### 1. Příklad 
+Přes velmi lehkou kladku je přehozen provázek a na obou jeho koncích jsou zavěšena závaží o hmotnostech 1kg a 0,5kg. S jakým zrychlením se bude soustava pohybovat?
+Tření, hmotnost kladky a provázku zde pro zjednodušení zanedbejte.
+<details>
+    <summary>Zobrazit řešení</summary>
+    Pro výpočet použijeme vztah
+
+    <Latex formula="\overrightarrow{F} = m \cdot \overrightarrow{a}" />
+    Nejprve zapišme vše co víme
+    <Latex formula="m_{1} = 0,5 kg; \space m_{2} = 1kg; \space \overrightarrow{a} = ?" />
+    Tihové síly obou těles si můžeme spočítat
+    <Latex formula="F_{G_1} = m_{1} \cdot g" />
+    <Latex formula="F_{G_2} = m_{2} \cdot g" />
+    Z čehož dostáváme, že:
+    <Latex formula="F_{G_1} = 5 \space N" />
+    <Latex formula="F_{G_2} = 10 \space N" />
+    Pužijeme 2. Newtonův zákon a dosadíme do něj pro každou stranu klady.
+    Nyní dosadíme tím, že obě strany(rovnice) sečteme a přičteme a odečteme tažnou sílu.
+    <Latex formula="\overrightarrow{a} = \frac{F_{G_2} - F_{G_1} + F_{t} - F_{t}}{m_{1} + m_{2}}" />
+    <Latex formula="\overrightarrow{a} = \frac{10 - 5}{1 + 0,5}" />
+    <Latex formula="\overrightarrow{a} \doteq 3,3 \space m \cdot s^{-2}" />
+</details>
