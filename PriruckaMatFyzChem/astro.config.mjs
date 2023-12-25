@@ -16,6 +16,12 @@ export default defineConfig({
         label: "Úvod",
         link: "uvod/uvod"
       }]
+    }, {
+      label: "Tabulky",
+      items: [{
+        label: "Měrná tepelná kapacita",
+        link: "tabulky/mernatepelnakapacita"
+      }]
     },{
       label: 'πMatematika',
       items: [
