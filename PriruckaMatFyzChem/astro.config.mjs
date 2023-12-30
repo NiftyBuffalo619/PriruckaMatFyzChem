@@ -166,6 +166,12 @@ export default defineConfig({
           }, {
             label: "Rekurentní zápis",
             link: "matematika/matematickaanalyza/posloupnosti/rekurentnizapis"
+          }, {
+            label: "Aritmetická posloupnost",
+            link: "matematika/matematickaanalyza/posloupnosti/aritmetickaposloupnost"
+          }, {
+            label: "Geometrická posloupnost",
+            link: "matematika/matematickaanalyza/posloupnosti/geometrickaposloupnost"
           }]
         }]
       }]
