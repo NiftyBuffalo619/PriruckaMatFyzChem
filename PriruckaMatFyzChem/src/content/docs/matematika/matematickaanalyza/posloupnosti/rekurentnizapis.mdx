@@ -1,0 +1,17 @@
+---
+title: Rekuretní zápis
+---
+import Latex from "../../../../../components/Latex.astro";
+
+Rekurentní zápis nese nevýhodu v tom, že pro výpočet n-tého členu je nutné manuálně dopočítat n-1 členů posloupnosti.
+Jinými slovy, je třeba provést postupný výpočet předchozích členů, abychom získali hodnotu n-tého členu. Např. Uvažujme posloupnost 
+<Latex formula="a_{n} = a_{n-1} + 3 \space , \space a_{1} = 2" />
+Tento vztah říká, že každý člen posloupnosti a<sub>n</sub> je roven předchozímu členu a<sub>n-1</sub>zvýšenému o 3. První člen a_n je stanoven na hodnotu 2.
+Zde je vždy daná hodnota nějaké členu.
+Nyní můžeme pomocí tohoto vztahu odvodit hodnoty prvních několika členů posloupnosti:
+<Latex formula="a_1 = 2 \space (stanoveno)" />
+<Latex formula="a_2 = a_1 + 3 = 2 + 3 = 5" />
+<Latex formula="a_3 = a_2 + 3 = 5 + 3 = 8" />
+<Latex formula="a_4 = a_3 + 3 = 8 + 3 = 11" />
+<Latex formula="..." />
+Tímto způsobem můžeme postupně dopočítat hodnoty členů posloupnosti pomocí rekurentního vztahu. Při každém kroku přičítáme 3 k předchozímu členu.

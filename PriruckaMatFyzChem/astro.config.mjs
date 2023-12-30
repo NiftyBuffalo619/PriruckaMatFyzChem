@@ -150,7 +150,25 @@ export default defineConfig({
             link: "matematika/komplexnicisla/gaussovarovina"
           }]
         }], 
-      },]
+      },{
+        label: "Matematická Analýza",
+        items: [{
+          label: "Úvod",
+          link: "matematika/matematickaanalyza/uvod"
+        }, {
+          label: "Posloupnosti",
+          items: [{
+            label: "Úvod",
+            link: "matematika/matematickaanalyza/posloupnosti/uvod"
+          }, {
+            label: "Zápis pomocí n-týho členu",
+            link: "matematika/matematickaanalyza/posloupnosti/zapispomocintyhoclenu"
+          }, {
+            label: "Rekurentní zápis",
+            link: "matematika/matematickaanalyza/posloupnosti/rekurentnizapis"
+          }]
+        }]
+      }]
     }, {
       label: '⚛Fyzika',
       items: [{

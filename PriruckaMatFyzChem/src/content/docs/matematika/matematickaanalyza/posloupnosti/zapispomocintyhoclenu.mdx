@@ -1,0 +1,18 @@
+---
+title: Zápis pomocí n-týho členu
+---
+import Latex from "../../../../../components/Latex.astro";
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+Zápis pomocí n-tého členu definuje každý člen posloupnosti pomocí jednoho konkrétního vzorce nebo pravidla, závislého pouze na indexu **n**. Např.
+<Latex formula="(3n + 2)^\infty _{n=1}" />
+Tento zápis mi naznačuje, že posloupnost 3n + 2 se vztahuje k číslům od 1 do nekonečna.
+Jeho výhodou je, že mohu libovolně vybrat hodnotu n a jednoduše ji dosadit.
+Například, když chci vypočítat 6. člen, stačí mi říci 3 * 6 + 2 = 20.  Zkráceně jsem za n dosadil 6, protože hledám právě 6. člen.
+
+
+<CardGrid>
+    <Card title="Pozor" icon="warning">
+        Je nutno dosazovat <Latex formula="n \in \N" />
+    </Card>
+</CardGrid>
