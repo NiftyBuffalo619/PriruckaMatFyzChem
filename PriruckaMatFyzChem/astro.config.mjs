@@ -173,6 +173,12 @@ export default defineConfig({
             label: "Geometrická posloupnost",
             link: "matematika/matematickaanalyza/posloupnosti/geometrickaposloupnost"
           }]
+        }, {
+          label: "Limity Posloupnosti",
+          items: [{
+            label: "Úvod",
+            link: "matematika/matematickaanalyza/limityposloupnosti/uvod"
+          }]
         }]
       }]
     }, {
