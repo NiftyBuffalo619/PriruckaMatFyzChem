@@ -263,6 +263,30 @@ export default defineConfig({
           label: "Úvod",
           link: "chemie/organickachemie/uvod"
         }]
+      }, {
+        label: "Fyzikální Chemie",
+        items: [{
+          label: "Termochemie",
+          items: [{
+            label: "Úvod",
+            link: "chemie/termochemie/uvod"
+          },{
+            label: "Entalpie",
+            link: "chemie/termochemie/entalpie"
+          },{
+            label: "Termochické zákony",
+            link: "chemie/termochemie/termochemickezakony"
+          },{
+            label: "Standartní slučovací teplo",
+            link: "chemie/termochemie/standartnislucovaciteplo"
+          },{
+            label: "Standarní spalovací teplo",
+            link: "chemie/termochemie/standartnispalneteplo"
+          },{
+            label: "Disociační Energie",
+            link: "chemie/termochemie/disociacnienergie"
+          }]
+        }]
       }]
     }]
   }), mdx()]
