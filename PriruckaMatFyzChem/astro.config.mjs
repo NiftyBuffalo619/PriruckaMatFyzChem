@@ -178,6 +178,15 @@ export default defineConfig({
           items: [{
             label: "Úvod",
             link: "matematika/matematickaanalyza/limityposloupnosti/uvod"
+          },{
+            label: "Popis Limity Posloupnosti",
+            link: "matematika/matematickaanalyza/limityposloupnosti/popislimity"
+          }, {
+            label: "Definice Limity",
+            link: "matematika/matematickaanalyza/limityposloupnosti/definicelimity"
+          },{
+            label: "Věty o Limitách",
+            link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"
           }]
         }]
       }]
