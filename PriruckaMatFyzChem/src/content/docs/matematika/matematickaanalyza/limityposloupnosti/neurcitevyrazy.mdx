@@ -1,0 +1,20 @@
+---
+title: Neurčité výrazy
+---
+import Latex from "../../../../../components/Latex.astro";
+
+Při výpočtu limit můžeme často narazit na situaci, kdy získáme výsledek, jehož přesný charakter není zcela jasný.
+Takovým jevům se v oblasti matematiky nazývá **Neurčité výrazy**.
+
+### Neurčitý výraz ∞ - ∞
+U toho výrazu nemůžeme přesně říct kolik je výsledek, protože odčítáme něco neuvěřitělné velkého od něčeho neuvěřitelně velkého.
+<Latex formula="\lim\limits_{n \to \infty} (2n - n) = \Braket{\Braket{ \infty - \infty}} = \lim\limits_{n \to \infty} (n) = \infty" />
+### Neurčitý výraz ∞ / ∞
+
+<Latex formula="\lim\limits_{n \to \infty} (\frac{ n^{2} + 3n}{2n -1} ) = \Braket{\Braket{ \frac{ \infty }{ \infty } }}" />
+Chceme zjistit limitu posloupnosti a<sub>n</sub> při **n** směřujícím k nekonečnu. Můžeme to udělat tak, že provedeme několik úprav výrazu.
+<Latex formula="\lim\limits_{n \to \infty} (\frac{ n^{2} + 3n}{2n -1} ) = \lim\limits_{n \to \infty} (\frac{ n^{2} (1 + \frac{3}{n} )}{ n (2 - \frac{1}{n} )} )" />
+<Latex formula="\lim\limits_{n \to \infty} (\frac{ \cancel{ n^{2} } (1 + \frac{3}{n} )}{ \cancel{ n } (2 - \frac{1}{n} )} )" />
+Nyní můžeme dosadit nekonečno
+<Latex formula="\lim\limits_{n \to \infty} ( \frac{ \infty \cdot (1 + \frac{3}{ \infty } )}{ 2 - \frac{1}{ \infty } } ) = \lim\limits_{n \to \infty} ( \frac{ \infty \cdot (1 + 0) }{2 - 0})" />
+<Latex formula="\lim\limits_{n \to \infty} ( \frac{ \infty }{ 2 } ) = \infty " />

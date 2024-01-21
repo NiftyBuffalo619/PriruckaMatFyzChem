@@ -185,6 +185,12 @@ export default defineConfig({
             label: "Definice Limity",
             link: "matematika/matematickaanalyza/limityposloupnosti/definicelimity"
           },{
+            label: "Základní Limity",
+            link: "matematika/matematickaanalyza/limityposloupnosti/zakladnilimity"
+          },{
+            label: "Neurčité výrazy", 
+            link: "matematika/matematickaanalyza/limityposloupnosti/neurcitevyrazy"
+          },{
             label: "Věty o Limitách",
             link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"
           }]
