@@ -194,8 +194,21 @@ export default defineConfig({
             label: "Neurčité výrazy", 
             link: "matematika/matematickaanalyza/limityposloupnosti/neurcitevyrazy"
           },{
+            label: "Limity s n-tou odmocninou",
+            link: "matematika/matematickaanalyza/limityposloupnosti/limitysntouodmocninou"
+          },{
             label: "Věty o Limitách",
             link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"
+          }, {
+            label: "Příklady",
+            items: [{
+              label: "Příklady",
+              link: "matematika/matematickaanalyza/limityposloupnosti/priklady/lehke",
+              badge: {
+                "text": "Lehké",
+                "variant": "success"
+              }
+            }]
           }]
         }]
       }]

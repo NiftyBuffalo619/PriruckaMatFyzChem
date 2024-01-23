@@ -1,0 +1,13 @@
+---
+title: Příklady Lehké
+---
+
+import Latex from "../../../../../../components/Latex.astro";
+
+<Latex formula="\lim\limits_{n \to \infty} ( \frac{ 5 - (3n + 2)}{ 2(3n + 2)} )" />
+
+<details>
+    <summary>Řešení</summary>
+    <Latex formula="\lim\limits_{n \to \infty} ( \frac{ 5 - (3n + 2)}{ 2(3n + 2)} ) = \lim\limits_{n \to \infty} ( \frac{ 3 - 3n }{ 6n + 4} ) = \lim\limits_{n \to \infty} ( \frac{ (3 - 3n) \cdot \frac{1}{n} }{ (6n + 4) \cdot \frac{1}{n} } )" />
+    <Latex formula="\lim\limits_{n \to \infty} ( \frac{ \frac{ 3 }{ n } - 3 }{ 6 + \frac{ 4 }{ n } } ) = \frac{ 0 - 3 }{ 6 + 0 } = - \frac{ 3 }{ 6 } = - \frac{ 1 }{ 2 } " />
+</details>
