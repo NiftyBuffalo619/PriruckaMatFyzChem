@@ -148,6 +148,9 @@ export default defineConfig({
           }, {
             label: "Gaussova rovina",
             link: "matematika/komplexnicisla/gaussovarovina"
+          }, {
+            label: "Goniometrický tvar",
+            link: "matematika/komplexnicisla/goniometrickytvar"
           }]
         }], 
       },{

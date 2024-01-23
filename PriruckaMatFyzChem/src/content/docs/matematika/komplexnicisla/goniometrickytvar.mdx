@@ -1,0 +1,45 @@
+---
+title: Goniometrický tvar Komplexního čísla
+---
+import Latex from "../../../../components/Latex.astro";
+
+Goniometrický tvar komplexního čísla je způsob, jak vyjádřit komplexní číslo v souvislosti s goniometrickými funkcemi.
+Tato forma je klíčovým nástrojem v matematice a fyzice, umožňujícím elegantní manipulaci s komplexními čísly pomocí trigonometrických vztahů.
+### Definice 
+Goniometrický tvar nenulového komplexního čísla **z** je výraz 
+<Latex formula="|z|( \blue{cos \alpha} +  \green{i sin \alpha} )" />
+Realné číslo alpha se nazývá **argument komplexního čísla** 
+Obvykle je argument komplexního čísla v intervalu <Latex formula="\alpha \in \lang 0; 2 \pi )" />
+
+### Rovnost komplexních čísel 
+Dvě komplexní čísla jsou ekvivalentní, pokud se jejich zobrazení v komplexní rovině překrývá.
+Dvě nenulová komplexní čísla x,y jsou si rovna, pokud' jsou si rovny jejich absolutní hodnoty a zárověn se jejich argumenty liší o <Latex formula="2k \pi , k \in \Z" />
+<Latex formula="|x|( cos \alpha + i sin \alpha) = |y|(cos \beta + i sin \beta) \Longleftrightarrow |x| = |y| \land \alpha = \beta + 2k \pi , k \in \Z" />
+### Převod algebraického tvaru na goniometrický tvar
+Máme zadané číslo v algebraickém tvaru
+<Latex formula="z = 2 + 2i" />
+Nejprve uděláme absolutní hodnotu tohoto komplexního čísla
+<Latex formula="|z| = \sqrt{2^{2} + 2^{2} }" />
+<Latex formula="|z| = \sqrt{8} " />
+<Latex formula="|z| = 2 \sqrt{2}" />
+Komplexní číslo může být vyjádřeno jako pravoúhlý trojúhelník. Z toho vypočteme cosinus a sinus argumentu komplexního čísla a následně využijeme společný úhel.
+<Latex formula="a = |z| \cdot \cos \alpha \implies \cos \alpha = \frac{a}{|z|} " />
+<Latex formula="b = |z| \cdot \sin \alpha \implies \sin \alpha = \frac{b}{|z|} " />
+Nyní dosadíme do cosinu
+<Latex formula="\cos \alpha = \frac{ \cancel 2}{ \cancel 2 \sqrt{2} } = \frac{1}{ \sqrt{2} } = \frac{ \sqrt{2} }{ 2 } " />
+Na jednotkové kružnici nebo kalkulačce zjistíme, že cosinus této hodnoty odpovídá úhly 
+<Latex formula="\alpha  \in \set{ \frac{ \pi }{ 4 } ; \frac{ 7 \pi }{ 4 } }" />
+Nyní dosadíme do sinu
+<Latex formula="\sin \alpha = \frac{ \cancel 2}{ \cancel 2 \sqrt{2} } = \frac{1}{ \sqrt{2} } = \frac{ \sqrt{2} }{ 2 } " />
+Na jednotkové kružnici nebo kalkulačce zjistíme, že cosinus této hodnoty odpovídá úhly 
+<Latex formula="\alpha  \in \set{ \frac{ \pi }{ 4 } ; \frac{ 3 \pi }{ 4 } }" />
+Společný úhel tedy je 
+<Latex formula="\alpha  \in \frac{ \pi }{ 4 } " />
+Dosadíme do goniometrického tvaru
+<Latex formula="|z|( \cos \alpha + i \sin \alpha) = 2 \sqrt{2} ( \cos \frac{ \pi}{ 4 } + i \sin \frac{ \pi }{ 4 } )" />
+
+### Převod goniometrického tvaru do tvaru algebraického
+Tento převod je jednodušší jednoduše stačí najít hodnotu pro cosinus i sinus argumentu a poté jenom roznásobit
+<Latex formula="2 \sqrt{2} ( \cos \frac{ \pi}{ 4 } + i \sin \frac{ \pi }{ 4 } )" />
+<Latex formula="2 \sqrt{2} ( \frac{ \sqrt{ 2 }}{ 2 } + i  \frac{ \sqrt{ 2 } }{ 2 } )" />
+<Latex formula="2 + 2i" />
