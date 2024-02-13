@@ -191,6 +191,9 @@ export default defineConfig({
             label: "Základní Limity",
             link: "matematika/matematickaanalyza/limityposloupnosti/zakladnilimity"
           },{
+            label: "Divergence Konvergence",
+            link: "matematika/matematickaanalyza/limityposloupnosti/divergencekonvergence"
+          },{
             label: "Neurčité výrazy", 
             link: "matematika/matematickaanalyza/limityposloupnosti/neurcitevyrazy"
           },{

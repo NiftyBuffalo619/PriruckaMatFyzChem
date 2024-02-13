@@ -2,3 +2,27 @@
 title: Limity s n-tou odmocninou
 ---
 
+import Latex from "../../../../../components/Latex.astro";
+
+Obecně řečeno, když říkáme posloupnosti s n-tou odmocninou, mluvíme o posloupnostech ve tvaru <Latex formula="a_{n} = \sqrt[n]{b_{n}} \space , n \in \N" /> a b<sub>n</sub>
+je posloupnost čísel.
+
+### Příklad 1.
+Mějme posloupnost <Latex formula="a_{n} = \sqrt[n]{n}" /> V tomto příkladě budeme zkoumat, jak se hodnota a<sub>n</sub> chová, když n roste.
+Z tabulek můžeme najít hodnoty pro prvních pár členů. 
+
+| <Latex formula="n" /> | <Latex formula="a_{n} = \sqrt[n]{n}" /> |
+| --- | --- |
+| 1 | <Latex formula="1" /> |
+| 2 | <Latex formula="\sqrt{2} \approx 1,41421" /> |
+| 3 | <Latex formula="\sqrt[3]{3} \approx 1,44225" /> |
+| 4 | <Latex formula="\sqrt[4]{4} = \sqrt{2} \approx 1,41421" /> |
+| 5 | <Latex formula="\sqrt[5]{5} \approx 1,37973" /> |
+| 6 | <Latex formula="\sqrt[6]{6} \approx 1,34801" /> |
+
+Při pohledu na hodnoty prvních členů posloupnosti lze pozorovat, že na začátku mohou hodnoty různě skákat a
+nemusí se zdát, že mají jednoznačný trend.
+To může být způsobeno kombinací exponenciálního a odmocninného růstu.
+Nicméně, s rostoucím **n** se hodnoty začínají více přibližovat k hodnotě 1. Jeho limita tedy je
+
+<Latex formula="\lim\limits_{n \to \infty} \sqrt[n]{n} = 1" />

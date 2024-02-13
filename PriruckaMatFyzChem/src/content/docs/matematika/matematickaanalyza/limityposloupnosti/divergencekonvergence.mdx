@@ -1,0 +1,19 @@
+---
+title: Divergence a Konvergence
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Dvě důležité vlastnosti posloupností jsou divergence a konvergence.
+### Divergence 
+Divergence posloupnosti znamená, že členy posloupnosti nemají jednoznačný limitní bod a mohou se blížit k nekonečnu nebo oscilovat mezi různými hodnotami.
+<Latex formula="| a_{n} - L | < \epsilon" /> <Latex formula="\forall M > 0 , \space \space \exists N \in \N : \forall n \in \N, n > N \implies | a_{n}  | > M" />
+
+
+
+### Konvergence
+Konvergence posloupnosti znamená, že členy posloupnosti se přibližují k určité hodnotě, jakmile se posunujeme do nekonečna. Formálně lze říci, že posloupnost a<sub>n</sub>
+konverguje k číslu L, pokud pro každé Epsilon > 0 existuje takové N , že pro všechna n > N platí 
+<Latex formula="| a_{n} - L | < \epsilon" />
+Matematický zápis pomocí výrokové logiky
+<Latex formula="\forall \epsilon > 0, \space \space \exists N \in \N : \forall n \in \N , n > N \implies | a_{n} - L | < \epsilon" />
