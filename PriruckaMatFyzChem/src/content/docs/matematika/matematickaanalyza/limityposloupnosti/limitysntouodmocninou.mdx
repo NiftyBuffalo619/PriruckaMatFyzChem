@@ -36,3 +36,23 @@ Přepíšeme odmocninu a dosadíme nekonečno
 Když to dosadíme do grafu zjištujeme, že se opravdu schyluje k 1 (Klikněte na ikonku fullscreen a otevřete ve fullscreenu)
 <iframe src="https://www.geogebra.org/calculator/fue9ug9v?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
+### Příklad 3.
+<Latex formula="\lim\limits_{n \to \infty} \sqrt[2n]{n}" />
+Využitím 
+<Latex formula="\sqrt{\sqrt[n]{x}} = \sqrt[2n]{x} \space \space , n \in \N , x > 0" />
+Opět přepíšeme výraz následovně 
+<Latex formula="\lim\limits_{n \to \infty} = \sqrt{\sqrt[n]{n}}" />
+Nyní můžeme celou limitu dát pod odmocninu
+<Latex formula="\sqrt{\lim\limits_{n \to \infty} \sqrt[n]{n}} = \sqrt{1} = 1" />
+Zde se využije znalost předchozí limity.
+
+### Příklad 4.
+<Latex formula="\lim\limits_{n \to \infty} \sqrt[3n]{3^n}" />
+Zde využijeme <Latex formula="\sqrt[s]{x^r} = x^{\frac{r}{s}}" />
+<Latex formula="\lim\limits_{n \to \infty} 3^{\frac{n}{3n}} = \lim\limits_{n \to \infty} 3^{\frac{ \red{\cancel{n}}}{3 \red{\cancel{n}}}} = \lim\limits_{n \to \infty} 3^{\frac{1}{3}} = \sqrt[3]{3}" />
+
+### Příklad 5.
+<Latex formula="\lim\limits_{n \to \infty} \frac{n^2 - (n^2 + n)}{\sqrt{n^2 + 1}} = \lim\limits_{n \to \infty} \frac{-n}{\sqrt{n^2 + 1}} = \lim\limits_{n \to \infty} \frac{-n}{\sqrt{n^2 (1 + \frac{1}{n^2})}}" />
+<Latex formula="\lim\limits_{n \to \infty} \frac{-n}{\sqrt{n^2} \sqrt{ (1 + \frac{1}{n^2})}} = \lim\limits_{n \to \infty} \frac{-n}{n \cdot \sqrt{ (1 + \frac{1}{n^2})}} = \lim\limits_{n \to \infty} \frac{\red{\cancel{-n}}}{\red{\cancel{n}} \cdot \sqrt{ (1 + \frac{1}{n^2})}}" />
+
+<Latex formula="\lim\limits_{n \to \infty} \frac{-1}{\sqrt{1 + \frac{1}{n^2}}} = \frac{-1}{\sqrt{1 + \frac{1}{\infty}}} = -1" />
