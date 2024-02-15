@@ -94,6 +94,12 @@ export default defineConfig({
         items: [{
           label: "Výrazy",
           items: [{
+            label: "Práce s mocniny",
+            link: "matematika/vyrazy/pracesmocniny"
+          },{
+            label: "Práce s odmocniny",
+            link: "matematika/vyrazy/pracesodmocniny"
+          },{
             label: "Práce s mnohočleny",
             link: "matematika/vyrazy/pracesmnohocleny"
           }]

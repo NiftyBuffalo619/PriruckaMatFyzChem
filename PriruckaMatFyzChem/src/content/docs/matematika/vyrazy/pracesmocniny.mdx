@@ -1,0 +1,26 @@
+---
+title: Práce s mocniny
+---
+
+import Latex from "../../../../components/Latex.astro";
+
+Pro každé realné číslo **a** a každé přirozené číslo **n** platí: 
+
+<Latex formula="a^n = \underbrace{a \cdot a \cdot ... \cdot a}_{\text{n činitelů}}" />
+
+Základ mocniny je nazývá mocniny (číslo a). Číslo n se nazývá mocnitel neboli exponent. A celý výraz se nazávý mocnina.
+
+
+### Pravidla pro počítání s mocninama
+<Latex formula="\forall a \in \Reals \space \space , \forall n \in \N" /> platí:
+<Latex formula="a^1 = a " />
+<Latex formula="1^n = 1 " />
+<Latex formula="0^n = 0" />
+
+<Latex formula="\forall a,b \in \Reals \space \space \forall r,s \in \Z" /> platí:
+<Latex formula="a^r \cdot a^s = a^{r + s}" />
+<Latex formula="(a^r)^s = a^{r \cdot s}" />
+<Latex formula="a^r : a^s = a^{r - s}" />
+<Latex formula="(a \cdot b)^r = a^r \cdot b^r" />
+<Latex formula="(\frac{a}{b})^r = \frac{a^r}{b^r} \space \space , b \ne 0" />
+<Latex formula="a^{-m} = \frac{1}{a^m} " />
