@@ -221,6 +221,9 @@ export default defineConfig({
             label: "Limity s Eulerovým číslem",
             link: "matematika/matematickaanalyza/limityposloupnosti/limityseulerovymcisel"
           },{
+            label: "Limity s faktoriály",
+            link: "matematika/matematickaanalyza/limityposloupnosti/limitysfaktorialy"
+          },{
             label: "Věty o Limitách",
             link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"
           }, {
