@@ -157,6 +157,12 @@ export default defineConfig({
           }, {
             label: "Goniometrický tvar",
             link: "matematika/komplexnicisla/goniometrickytvar"
+          }, {
+            label: "De Moivreova věta",
+            link: "matematika/komplexnicisla/demoivreovaveta"
+          }, {
+            label: "Exponencionální tvar",
+            link: "matematika/komplexnicisla/exponencionalnitvar"
           }]
         }], 
       },{

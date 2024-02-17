@@ -1,0 +1,31 @@
+---
+title: De Moiverova Věta
+---
+import Latex from "../../../../components/Latex.astro";
+
+De Moivrova věta je matematický nástroj, který umožňuje snadné zpracování a zkoumání komplexních čísel ve tvaru a + bi.
+Tato věta hraje klíčovou roli v komplexní analýze a najde uplatnění v různých matematických a fyzikálních disciplínách.
+Znění: 
+Pro libovolné reálné číslo **x** a přirozené číslo **n** platí
+<Latex formula="(\cos x + i \sin x)^n = \cos(nx) + i \sin(nx)" />
+<Latex formula="|z|^n(\cos x + i \sin x)^n = |z|^n \big( \cos(nx) + i \sin(nx) \big)" />
+<Latex formula=" \sqrt[n]{|z|} \Big(\cos \frac{\alpha + 2k \pi}{n} + i \sin \frac{\alpha + 2k \pi}{n} \Big) \space \space , k \in \lbrace n - 1   \rbrace , k \in \Z" />
+Tato věta poskytuje elegantní způsob, jak umocňovat komplexní čísla na celá mocniny.
+
+
+### Význam
+1. Rotace v rovině: De Moivrova věta je často používána k rotaci bodů v rovině kolem počátku souřadného systému.
+2. Umocňování komplexních čísel: Věta zjednodušuje umocňování komplexních čísel na vyšší mocniny, což je často klíčové v matematických výpočtech a teorii čísel.
+
+### Příklad 1.
+<Latex formula="(1 - i)^8" />
+Nejprve převedeme na goniometrický tvar
+<Latex formula="|z| = \sqrt{1^2 + (-1)^2} = \sqrt{2}" />
+<Latex formula="\cos \alpha = \frac{a}{|z|} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}" />
+<Latex formula="\alpha \in \lbrace \frac{\pi}{4} + 2k \pi ; \frac{7\pi}{4} + 2k \pi \rbrace \space \space , k \in \Z" />
+<Latex formula="\sin \alpha = \frac{b}{|z|} = \frac{-1}{\sqrt{2}} = - \frac{\sqrt{2}}{2}" />
+<Latex formula="\alpha \in \lbrace \frac{5 \pi }{4} + 2k \pi ; \frac{7 \pi}{4} + 2k \pi \rbrace \space \space , k \in \Z" />
+Oba dva mají společný úhel 7pi/4.Dostaneme tedy
+<Latex formula="1 - i = \sqrt{2} \big( \cos \frac{7 \pi}{4} + i \sin \frac{7 \pi}{4} \big)" />
+Využitím De Moiverovy věty Dostaneme
+<Latex formula="(1 - i)^8 = (\sqrt{2})^8 \big( \cos \frac{8 \cdot 7 \pi}{4} + i \sin \frac{8 \cdot 7 \pi}{4} \big) = 16 ( \cos 14 \pi + i \sin 14 \pi ) = 16" />
