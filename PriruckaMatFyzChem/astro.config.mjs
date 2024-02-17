@@ -203,11 +203,17 @@ export default defineConfig({
             label: "Oscilující Posloupnosti",
             link: "matematika/matematickaanalyza/limityposloupnosti/oscilujiciposloupnosti"
           },{
+            label: "Výpis Neurčitých výrazů",
+            link: "matematika/matematickaanalyza/limityposloupnosti/vypisneurcitychvyrazu"
+          },{
             label: "Neurčité výrazy", 
             link: "matematika/matematickaanalyza/limityposloupnosti/neurcitevyrazy"
           },{
             label: "Limity s n-tou odmocninou",
             link: "matematika/matematickaanalyza/limityposloupnosti/limitysntouodmocninou"
+          },{
+            label: "Limity s Eulerovým číslem",
+            link: "matematika/matematickaanalyza/limityposloupnosti/limityseulerovymcisel"
           },{
             label: "Věty o Limitách",
             link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"

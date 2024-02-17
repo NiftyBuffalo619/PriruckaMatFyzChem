@@ -1,0 +1,24 @@
+---
+title: Limity s Eulerovým číslem
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Jedna z definic Eulerova čísla je pomocí následující posloupnosti.
+<Latex formula="e = \lim\limits_{n \to \infty} (1 + \frac{1}{n})^n" />
+
+### Příklad 1.
+<Latex formula="\lim\limits_{n \to \infty} (1 + \frac{1}{3n})^n" />
+Dosazením nekonečna dostaneme neurčitý výraz. <Latex formula="\Braket{\Braket{ \space \space 1^{\infty} \space \space }}" />
+
+Provedeme substituci 
+<Latex formula="t = 3n" />
+<Latex formula="n = \frac{1}{3}t" />
+Dosadíme t
+<Latex formula="\lim\limits_{t \to \infty} \big( 1 + \frac{1}{t} \big)^{\frac{1}{3}t} = \Big( \lim\limits_{t \to \infty} \big(1 + \frac{1}{t} \big)^{t} \Big)^{\frac{1}{3}} = (e)^{\frac{1}{3}} = \sqrt[3]{e}" />
+Zde můžeme dát celou limitu pod 1/3 a dostaneme s horního příkladu **e** a poté jenom umocníme na 1/3.
+
+### Vztah 
+<Latex formula="\lim\limits_{n \to \infty} \Big( 1 + \frac{a}{n} \Big)^{bn} = e^{ab}" />
+V případě minulého příkladu by bylo a, b 
+<Latex formula="a = \frac{1}{3} \space \space b = 1" />
