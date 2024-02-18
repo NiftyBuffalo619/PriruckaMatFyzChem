@@ -1,0 +1,20 @@
+---
+title: Geometrická řada
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Geometrická řada je speciální typ nekonečné řady, kde každý člen je násobkem předchozího člena konstantou, nazývanou kvocient.
+Funguje podobně jako geometrická posloupnost.
+
+### Příklad Geometrické řady
+<Latex formula="\displaystyle \sum\limits_{n = 1}^{\infty} \Bigg(\frac{1}{2} \Bigg)^n" />
+Aby měla nekonečná řada součet musí konvergovat k nule.
+
+Dosadíme tedy do limity
+<Latex formula="\displaystyle \lim\limits_{n \to \infty} \Big(\frac{1}{2} \Big)^n = \lim\limits_{n \to \infty} \frac{1}{2^n} = \frac{1}{\infty} = 0" />
+Vidíme , že limita vyšla 0, proto víme, že nekonečná řada bude mít součet.
+Nyní použijeme vzorec pro součet geometrické posloupnosti.
+<Latex formula="\displaystyle s_n = \frac{a_1}{1 - q}" />, kde q je kvocient (rozdíl mezi členy).
+<Latex formula="\displaystyle s_n = \frac{\frac{1}{2}}{1 - \frac{1}{2}} = \frac{\frac{1}{2}}{\frac{1}{2}} = 1" />
+Součet je tedy 1.

@@ -237,6 +237,15 @@ export default defineConfig({
               }
             }]
           }]
+        }, {
+          label: "Nekonečné řady",
+          items: [{
+            label: "Úvod",
+            link: "matematika/matematickaanalyza/nekonecnerady/uvod"
+          }, {
+            label: "Geometrická řada",
+            link: "matematika/matematickaanalyza/nekonecnerady/geometrickarada"
+          }]
         }]
       }]
     }, {
