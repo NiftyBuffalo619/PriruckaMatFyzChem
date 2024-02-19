@@ -251,6 +251,9 @@ export default defineConfig({
           }, {
             label: "Geometrická řada",
             link: "matematika/matematickaanalyza/nekonecnerady/geometrickarada"
+          }, {
+            label: "Harmonická řada",
+            link: "matematika/matematickaanalyza/nekonecnerady/harmonickarada"
           }]
         }]
       }]
