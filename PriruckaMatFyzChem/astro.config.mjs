@@ -104,6 +104,12 @@ export default defineConfig({
             link: "matematika/vyrazy/pracesmnohocleny"
           }]
         },{
+          label: "Linearní rovnice",
+          items: [{
+            label: "Linearní rovnice",
+            link: "matematika/algebra/linearnirovnice"
+          }]
+        },{
           label: "Logaritmy",
           items: [{
               label: 'Úvod',
