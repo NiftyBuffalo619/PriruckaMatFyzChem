@@ -7,12 +7,32 @@ import Latex from "../../../../../components/Latex.astro";
 Nekonečné řady jsou fascinujícím a hlubokým matematickým konceptem, který hraje klíčovou roli v analýze a teorii čísel.
 Představují matematický způsob, jak zkoumat součty nekonečného počtu členů, které mohou mít různé vlastnosti a chování.
 ### Zápis
-Nekonečné řady často zapisujeme pomocí sumátorového symbolu Σ (sigma), který nám umožňuje kompaktně vyjádřit součet všech členů řady.
+Nekonečné řady často zapisujeme pomocí sumátorového symbolu $$ \sum $$ (sigma), který nám umožňuje kompaktně vyjádřit součet všech členů řady.
 Obecný tvar zápisu nekonečné řady může vypadat následovně:
 <Latex formula="\displaystyle \sum_{n = 1}^{\infty} a_n = a_1 + a_2 + a_3 + \cdots + a_n + \cdots" />
 
-Kde n je čísto členu
+Kde $$ n $$ je čísto členu $$ n $$ značí odkud začíná může začínat i od 0 nebo 5, ale většinou začíná od 1.
+
+### N-tý částečný součet řady
+<Latex formula="\displaystyle s_{n} = \sum_{n = 1}^{n} a_{n}" />
+nebo 
+<Latex formula="\displaystyle a_1 + a_2 + a_3 + \cdots" />
+Ve zkratce jakýkoliv součet členů, který není nekonečný.
+
+### Posloupnost částečných součtů
+Pro obecné nekonečné řady lze také definovat posloupnost částečných součtů. Pokud máme nekonečnou řadu $$ a_1 + a_2 + a_3 $$ , pak částečný součet prvních $$ n $$ členů
+této řady je dán následujícím vzorcem
+<Latex formula="\displaystyle \lbrace s_n \rbrace _{n = 1}^{\infty}" />
 
 ### Konvergence a Divergence
 Konvergentní řada má konečný součet, zatímco divergentní řada nemá.
 Existují různé kritéria pro určení, zda daná řada konverguje či diverguje, včetně Základního kritéria konvergence, Poměrového kritéria, Kritéria kořenového testu a mnoha dalších.
+
+Existuje-li vlastní limita $$ \displaystyle \lim\limits_{n \to \infty} s_n = s $$, pak řekneme , že řada $$ \displaystyle \sum_{n = 1}^{\infty} a_n $$ konverguje.
+<br></br>
+Neexistuje-li vlastní limita $$ \displaystyle \lim\limits_{n \to \infty} s_n $$, pak řekneme , že řada $$ \displaystyle \sum_{n = 1}^{\infty} a_n $$ diverguje. 
+<br></br>
+Rozdělujeme je na následující případy.
+1. Je-li $$ \displaystyle \lim\limits_{n \to \infty} s_n = \infty $$, pak řada diverguje k $$ + \infty $$
+2. Je-li $$ \displaystyle \lim\limits_{n \to \infty} s_n = - \infty $$, pak řada diverguje k $$ - \infty $$
+3. Neexistuje-li $$ \displaystyle \lim\limits_{n \to \infty} s_n $$, pak řada osciluje 
