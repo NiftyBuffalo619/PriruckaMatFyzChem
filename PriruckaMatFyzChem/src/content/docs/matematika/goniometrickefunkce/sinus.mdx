@@ -2,3 +2,67 @@
 title: Funkce Sinus
 description: Informace a využití funkce sinus
 ---
+
+import Latex from "../../../../components/Latex.astro";
+
+Funkce sinus je goniometrická funkce nějakého úhlu $$ \displaystyle \alpha $$.Sinusová funkce je definována pro všechny reálné úhly a je jednou z nejzákladnějších funkcí ve trigonometrii.
+Píše se jako $$ \sin \alpha $$.
+
+### Jednotková kružnice
+Sinus se snadno definuje na jednotkové kružnici, což je kružnice se středem v počátku a poloměrem 1. Jestliže je $$ \alpha $$
+úhel mezi kladnou poloosou x a ramenem (orientovaným od kladné poloosy x proti směru hodinových ručiček), pak $$ \sin \alpha $$
+odpovídá y-ové souřadnici průsečíku koncového bodu ramene s jednotkovou kružnicí. Jinými slovy, je to délka kolmice spuštěné z tohoto bodu na osu x.
+Délka úsečky od počátku k patě této kolmice, přesněji x-ová souřadnice průsečíku jednotkové kružnice s koncovým bodem ramene úhlu $$ \alpha $$ 
+(s přihlédnutím k znaménku), se nazývá cosinus $$ \alpha $$.Poloměr jednotkové kružnice, kolmice a tato úsečka společně tvoří pravoúhlý trojúhelník, v němž platí Pythagorova věta, což znamená, že:
+
+<Latex formula="\displaystyle (\sin \alpha)^2 + (\cos \alpha)^2 = 1" />
+
+### Vlastnosti Funkce 
+Funkce $$ \displaystyle y = \sin x $$ a $$ k \in \Z $$
+
+Definiční obor funkce $$ \Reals $$
+
+| | |
+| --- | --- |
+| Definiční obor | <Latex formula="\displaystyle \Reals" /> |
+| Obor hodnot | <Latex formula="\displaystyle \langle -1 ; 1 \rangle" /> |
+| Roustoucí | <Latex formula="\displaystyle \Big( - \frac{\pi}{2} + 2k \pi ; \frac{\pi}{2} + 2k \pi \Big)" /> |
+| Klesající | <Latex formula="\displaystyle \Big( \frac{\pi}{2} + 2k \pi ; \frac{3}{2} \pi + 2k \pi \Big)" /> |
+| Maximum | <Latex formula="1 \space v \space bodě \space \space \frac{\pi}{2} + 2k \pi" /> |
+| Minimum | <Latex formula="-1 \space v \space bodě \space \space \frac{3}{2} \pi + 2k \pi " /> |
+| Derivace | <Latex formula="\displaystyle ( \sin x )' = \cos x" /> |
+| Primitivní funkce | <Latex formula="\displaystyle \int \sin x \ d x" /> |
+| Inverzní funkce | <Latex formula="\arcsin" /> |
+| Omezenost | Omezená shora i sdola |
+| | Je Lichá |
+| Perioda | Je periodická $$ 2 \pi $$ |
+| | Není prostá |
+
+### Kvadranty v Kartézské soustavě souřadnice
+| Kvadranty | Stupně | Radiány | Hodnota | Hodnota sinu |
+| --- | --- | --- | --- | --- |
+| I. | <Latex formula="0° \leqq x \leqq 90°" /> | <Latex formula="0 \leqq x \leqq \frac{\pi}{2}" /> | <Latex formula="\langle 0 ; 1 \rangle" /> | + |
+| II. | <Latex formula="90° \leqq x \leqq 180°" /> | <Latex formula="\frac{\pi}{2} \leqq x \leqq \pi" /> | <Latex formula="\langle 0 ; 1 \rangle" /> | + |
+| III. | <Latex formula="180° \leqq x \leqq 270°" /> | <Latex formula="\pi < x < \frac{3}{2} \pi" /> | <Latex formula="\langle -1 ; 0 \rangle" /> | - |
+| IV. | <Latex formula="270° \leqq x \leqq 360° " /> | <Latex formula="\frac{3}{2} \pi < x < 2 \pi" /> | <Latex formula="\langle -1 ; 0 \rangle" /> | - |
+
+| Stupně | Radiány | $$ \sin x $$ |
+| --- | --- | --- |
+| <Latex formula="0°" /> | <Latex formula="0" /> | <Latex formula="0" /> |
+| <Latex formula="15°" /> | <Latex formula="\frac{\pi}{12}" /> | <Latex formula="\frac{\sqrt{6} - \sqrt{2}}{4}" /> |
+| <Latex formula="30°" /> | <Latex formula="\frac{\pi}{6}" /> | <Latex formula="\frac{1}{2}" /> |
+| <Latex formula="45°" /> | <Latex formula="\frac{\pi}{4}" /> | <Latex formula="\frac{\sqrt{2}}{2}" /> |
+| <Latex formula="75°" /> | <Latex formula="\frac{5 \pi}{12}" /> | <Latex formula="\frac{\sqrt{6} + \sqrt{2}}{4}" /> |
+| <Latex formula="90°" /> | <Latex formula="\frac{\pi}{2}" /> | <Latex formula="1" /> |
+| <Latex formula="105°" /> | <Latex formula="\frac{7 \pi}{12}" /> | <Latex formula="\frac{\sqrt{6} + \sqrt{2}}{4}" /> |
+| <Latex formula="120°" /> | <Latex formula="\frac{2 \pi}{3}" /> | <Latex formula="\frac{\sqrt{3}}{2}" /> |
+| <Latex formula="135°" /> | <Latex formula="\frac{3 \pi}{4}" /> | <Latex formula="\frac{\sqrt{2}}{2}" /> |
+| <Latex formula="150°" /> | <Latex formula="\frac{5 \pi}{6}" /> | <Latex formula="\frac{1}{2}" /> |
+| <Latex formula="165°" /> | <Latex formula="\frac{11 \pi}{12}" /> | <Latex formula="\frac{-\sqrt{2} + \sqrt{6}}{4}" /> |
+| <Latex formula="180°" /> | <Latex formula="\pi" /> | <Latex formula="0" /> |
+| <Latex formula="270°" /> | <Latex formula="\frac{3}{2} \pi" /> | <Latex formula="-1" /> |
+| <Latex formula="360°" /> | <Latex formula="2 \pi" /> | <Latex formula="0" /> |
+
+### Taylorova řada 
+<Latex formula="\displaystyle \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots =  \sum_{n = 0}^{\infty} \frac{(-1)^n x^{2n + 1}}{(2n + 1)!}" />
+

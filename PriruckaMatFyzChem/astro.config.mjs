@@ -75,20 +75,23 @@ export default defineConfig({
             text: "Nové",
             variant: "success"
           }
-        }, {
-          label: 'Funkce Sinus',
-          link: 'matematika/goniometrickefunkce/sinus'
-        }, {
-          label: 'Funkce Cosinus',
-          link: 'matematika/goniometrickefunkce/cosinus'
-        },
-        {
-          label: 'Funkce Tangens',
-          link: 'matematika/goniometrickefunkce/tangens'
-        },
-        {
-          label: 'Funkce Cotangens',
-          link: 'matematika/goniometrickefunkce/cotangens'
+        },{
+          label: "Goniometrické funkce",
+          items: [{
+            label: 'Funkce Sinus',
+            link: 'matematika/goniometrickefunkce/sinus'
+          }, {
+            label: 'Funkce Cosinus',
+            link: 'matematika/goniometrickefunkce/cosinus'
+          },
+          {
+            label: 'Funkce Tangens',
+            link: 'matematika/goniometrickefunkce/tangens'
+          },
+          {
+            label: 'Funkce Cotangens',
+            link: 'matematika/goniometrickefunkce/cotangens'
+          }]
         }]
       },
       {
