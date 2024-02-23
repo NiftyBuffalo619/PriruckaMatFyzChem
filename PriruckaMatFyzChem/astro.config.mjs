@@ -259,6 +259,9 @@ export default defineConfig({
           }, {
             label: "Harmonická řada",
             link: "matematika/matematickaanalyza/nekonecnerady/harmonickarada"
+          }, {
+            label: "Srovnávací Kritérium",
+            link: "matematika/matematickaanalyza/nekonecnerady/srovnavacikriterium"
           }]
         }]
       }]
