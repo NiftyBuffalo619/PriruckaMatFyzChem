@@ -6,10 +6,10 @@ import Latex from "../../../../../components/Latex.astro";
 Při výpočtu limit můžeme často narazit na situaci, kdy získáme výsledek, jehož přesný charakter není zcela jasný.
 Takovým jevům se v oblasti matematiky nazývá **Neurčité výrazy**.
 
-### Neurčitý výraz ∞ - ∞
+### Neurčitý výraz $$\displaystyle \infty - \infty $$
 U toho výrazu nemůžeme přesně říct kolik je výsledek, protože odčítáme něco neuvěřitělné velkého od něčeho neuvěřitelně velkého.
 <Latex formula="\lim\limits_{n \to \infty} (2n - n) = \Braket{\Braket{ \infty - \infty}} = \lim\limits_{n \to \infty} (n) = \infty" />
-### Neurčitý výraz ∞ / ∞
+### Neurčitý výraz $$\displaystyle \frac{\infty}{\infty}$$
 
 <Latex formula="\lim\limits_{n \to \infty} (\frac{ n^{2} + 3n}{2n -1} ) = \Braket{\Braket{ \frac{ \infty }{ \infty } }}" />
 Chceme zjistit limitu posloupnosti a<sub>n</sub> při **n** směřujícím k nekonečnu. Můžeme to udělat tak, že provedeme několik úprav výrazu.
@@ -18,3 +18,11 @@ Chceme zjistit limitu posloupnosti a<sub>n</sub> při **n** směřujícím k nek
 Nyní můžeme dosadit nekonečno
 <Latex formula="\lim\limits_{n \to \infty} ( \frac{ \infty \cdot (1 + \frac{3}{ \infty } )}{ 2 - \frac{1}{ \infty } } ) = \lim\limits_{n \to \infty} ( \frac{ \infty \cdot (1 + 0) }{2 - 0})" />
 <Latex formula="\lim\limits_{n \to \infty} ( \frac{ \infty }{ 2 } ) = \infty " />
+
+### Neurčitý výraz $$\displaystyle 0 \cdot \infty $$
+<Latex formula="\lim\limits_{n \to \infty} \frac{1}{n^2} \cdot n = \Braket{\Braket{0 \cdot \infty}} = \lim\limits_{n \to \infty} \frac{1}{n} = 0" />
+### Neurčitý výraz $$\displaystyle \frac{0}{0} $$
+<Latex formula="\displaystyle \lim\limits_{n \to \infty} \frac{ \frac{1}{n^2} }{ \frac{1}{n} } = \Braket{ \Braket{ \frac{0}{0} } } = \lim\limits_{n \to \infty} \frac{1}{n^2} \cdot \frac{n}{1} = \lim\limits_{n \to \infty} \frac{1}{n} = 0" />
+### Neurčitý výraz $$\displaystyle 1^{\infty} $$
+<Latex formula="\displaystyle \lim\limits_{n \to \infty} 1^n = \Braket{ \Braket{ 1^{\infty} } } = 1 " />
+Zde ačkoliv pod dosazení dostaneme neurčitá výraz je jasné, že limita bude při jakkoliv velikém $$ x $$ stále $$ 1 $$.

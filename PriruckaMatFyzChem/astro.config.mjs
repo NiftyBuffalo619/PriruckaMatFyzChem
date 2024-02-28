@@ -200,48 +200,48 @@ export default defineConfig({
             link: "matematika/matematickaanalyza/posloupnosti/geometrickaposloupnost"
           }]
         }, {
-          label: "Limity Posloupnosti",
+          label: "Limity",
           items: [{
             label: "Úvod",
-            link: "matematika/matematickaanalyza/limityposloupnosti/uvod"
+            link: "matematika/matematickaanalyza/limity/uvod"
           },{
             label: "Popis Limity Posloupnosti",
-            link: "matematika/matematickaanalyza/limityposloupnosti/popislimity"
+            link: "matematika/matematickaanalyza/limity/popislimity"
           }, {
             label: "Definice Limity",
-            link: "matematika/matematickaanalyza/limityposloupnosti/definicelimity"
+            link: "matematika/matematickaanalyza/limity/definicelimity"
           },{
             label: "Základní Limity",
-            link: "matematika/matematickaanalyza/limityposloupnosti/zakladnilimity"
+            link: "matematika/matematickaanalyza/limity/zakladnilimity"
           },{
             label: "Divergence Konvergence",
-            link: "matematika/matematickaanalyza/limityposloupnosti/divergencekonvergence"
+            link: "matematika/matematickaanalyza/limity/divergencekonvergence"
           },{
             label: "Oscilující Posloupnosti",
-            link: "matematika/matematickaanalyza/limityposloupnosti/oscilujiciposloupnosti"
+            link: "matematika/matematickaanalyza/limity/oscilujiciposloupnosti"
           },{
             label: "Výpis Neurčitých výrazů",
-            link: "matematika/matematickaanalyza/limityposloupnosti/vypisneurcitychvyrazu"
+            link: "matematika/matematickaanalyza/limity/vypisneurcitychvyrazu"
           },{
             label: "Neurčité výrazy", 
-            link: "matematika/matematickaanalyza/limityposloupnosti/neurcitevyrazy"
+            link: "matematika/matematickaanalyza/limity/neurcitevyrazy"
           },{
             label: "Limity s n-tou odmocninou",
-            link: "matematika/matematickaanalyza/limityposloupnosti/limitysntouodmocninou"
+            link: "matematika/matematickaanalyza/limity/limitysntouodmocninou"
           },{
             label: "Limity s Eulerovým číslem",
-            link: "matematika/matematickaanalyza/limityposloupnosti/limityseulerovymcisel"
+            link: "matematika/matematickaanalyza/limity/limityseulerovymcisel"
           },{
             label: "Limity s faktoriály",
-            link: "matematika/matematickaanalyza/limityposloupnosti/limitysfaktorialy"
+            link: "matematika/matematickaanalyza/limity/limitysfaktorialy"
           },{
             label: "Věty o Limitách",
-            link: "matematika/matematickaanalyza/limityposloupnosti/vetyolimitach"
+            link: "matematika/matematickaanalyza/limity/vetyolimitach"
           }, {
             label: "Příklady",
             items: [{
               label: "Příklady",
-              link: "matematika/matematickaanalyza/limityposloupnosti/priklady/lehke",
+              link: "matematika/matematickaanalyza/limity/priklady/lehke",
               badge: {
                 "text": "Lehké",
                 "variant": "success"
