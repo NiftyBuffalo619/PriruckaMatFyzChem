@@ -262,6 +262,9 @@ export default defineConfig({
           }, {
             label: "Srovnávací Kritérium",
             link: "matematika/matematickaanalyza/nekonecnerady/srovnavacikriterium"
+          }, {
+            label: "Integrální Kritérium",
+            link: "matematika/matematickaanalyza/nekonecnerady/integralnikriterium"
           }]
         }]
       }]
