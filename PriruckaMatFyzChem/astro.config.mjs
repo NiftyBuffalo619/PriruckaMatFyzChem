@@ -300,6 +300,9 @@ export default defineConfig({
                   text: "Lehké",
                   variant: "success"
                 }
+              },{
+                label: "Nakloněná rovina",
+                link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/naklonenarovina"
               }, {
                 label: "3. Akce a reakce",
                 link: "fyzika/mechanika/klasickamechanika/dynamika/newtonovyzakony/zakonakceareakce"

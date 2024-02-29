@@ -1,0 +1,41 @@
+---
+title: Nakloněná rovina
+---
+
+import Latex from "../../../../../../../components/Latex.astro";
+
+Když těleso sklouzává nebo se pohybuje po nakloněné rovině, působí na něj síla tíhy, která směřuje dolů a může se rozložit na dvě složky vzhledem k nakloněné rovině. Tyto dvě složky jsou:
+1. Síla kolmá k rovině nazveme ji $$ \overrightarrow{F_{N}} $$ Tato síla směřuje kolmo k nakloněné rovině a je dána vztahem
+<Latex formula="F_N = mg \cos \alpha" /> Kde m je hmotnost tělesa , g je tíhové zrychlení a $$ \alpha $$ je úhel nakloněné roviny
+2. Síla podél roviny Tato síla směřuje podél nakloněné roviny a je dána vztahem 
+<Latex formula="F_1 = mg \sin \alpha" />
+Zde m je opět hmotnost tělesa 
+
+
+### Výpočet Zrychlení
+Pro výpočet zrychlení musíme aplikovat 2. Pohybový zákon kde platí.
+<Latex formula="\displaystyle \sum \overrightarrow{F} = m \overrightarrow{a}" />
+Dosadíme obě síly 
+<Latex formula="\displaystyle ma = mg \sin \alpha - f mg \cos \alpha" />
+<Latex formula="\displaystyle a = g \sin \alpha - f g \cos \alpha" />
+<Latex formula="\displaystyle a = g ( \sin \alpha - f \cos \alpha)" />
+### Výpočet Dráhy
+<Latex formula="\displaystyle \green{(1)} \space \space s = \frac{1}{2} a t^2" />
+Do vztahu pro výpočet dráhy dosadíme 
+<Latex formula="\displaystyle s = \frac{1}{2} g ( \sin \alpha - f \cos \alpha )" />
+### Výpočet Času
+Ze vztahu 1 dosadíme
+<Latex formula="\displaystyle s = \frac{1}{2} g ( \sin \alpha - f \cos \alpha ) t^2" />
+<Latex formula="\displaystyle 2s =  g ( \sin \alpha - f \cos \alpha ) t^2" />
+<Latex formula="\displaystyle \frac{2s}{g ( \sin \alpha - f \cos \alpha )} =  t^2" />
+<Latex formula="\displaystyle (3) \space \space t = \sqrt{\frac{2s}{g ( \sin \alpha - f \cos \alpha )}}" />
+### Výpočet Rychlosti
+<Latex formula="\displaystyle \green{(2)} \space \space v = at" />
+Využijeme vztahu 3 a dosadíme do vztahu 2
+<Latex formula="\displaystyle v = g ( \sin \alpha - f \cos \alpha ) \sqrt{\frac{2s}{g ( \sin \alpha - f \cos \alpha )}}" />
+<Latex formula="\displaystyle v = g ( \sin \alpha - f \cos \alpha ) \frac{\sqrt{2s}}{\sqrt{g ( \sin \alpha - f \cos \alpha )}}" />
+<Latex formula=" v = g ( \sin \alpha - f \cos \alpha ) \frac{\sqrt{2s}}{\sqrt{g ( \sin \alpha - f \cos \alpha )}} \frac{\sqrt{g ( \sin \alpha - f \cos \alpha )}}{\sqrt{g ( \sin \alpha - f \cos \alpha )}}" />
+<Latex formula="\displaystyle v = g ( \sin \alpha - f \cos \alpha ) \frac{\sqrt{2s} \sqrt{g ( \sin \alpha - f \cos \alpha )}}{g ( \sin \alpha - f \cos \alpha )}" />
+<Latex formula="\displaystyle v = \cancel{g ( \sin \alpha - f \cos \alpha )} \frac{\sqrt{2gs( \sin \alpha - f \cos \alpha )}}{\cancel{g ( \sin \alpha - f \cos \alpha )}}" />
+<Latex formula="\displaystyle v = \sqrt{2gs( \sin \alpha - f \cos \alpha )}" />
+<Latex formula="" />
