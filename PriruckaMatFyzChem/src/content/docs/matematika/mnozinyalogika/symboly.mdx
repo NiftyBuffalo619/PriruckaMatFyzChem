@@ -17,6 +17,8 @@ import NegationTable from "../../../../components/NegationTable.astro";
 | <Latex formula="\supset" /> | Vlastní Nadmnožina | <Latex formula="A \supset B" /> A je vlastní nadmnoužinou B |
 | <Latex formula="\cup" /> | Sjednocení množin | <Latex formula="A \cup B" /> A sjednocení B |
 | <Latex formula="\cap" /> | Průnik množin | <Latex formula="A \cap B" /> A průnik B |
+| <Latex formula="\varnothing , \empty" /> | Prázdná množina | <Latex formula="A \in \varnothing" /> A je prvkem prázdné množiny |
+| <Latex formula="\setminus" /> | Rozdíl množin | <Latex formula="A \setminus B" /> A rozdíl B |
 
 # Symboly Výrokové Logiky
 | Symbol | Význam | Příklad | Pravdivostní tabulka |
@@ -26,3 +28,15 @@ import NegationTable from "../../../../components/NegationTable.astro";
 | <Latex formula="\implies" /> | Implikace | <Latex formula="A \implies B" /> | <Table formula="A \implies B" firstLine="1" secondLine="0" thirdLine="1" fourthLine="1" /> |
 | <Latex formula="\iff" /> | Ekvivalence | <Latex formula="A \iff B" /> | <Table formula="A \iff B" firstLine="1" secondLine="0" thirdLine="0" fourthLine="1" /> |
 | <Latex formula="\neg" /> | Negace | <Latex formula="\neg A" /> | <NegationTable formula="\neg A" /> |
+| <Latex formula="\forall" /> | Obecný kvantifikátor |  |
+| <Latex formula="\exists" /> | Existenční kvantifikátor  | |
+| <Latex formula="\exists !" /> | Kvantifikátor jednoznačné existence  | |
+
+# Symboly Matematické analýzy
+| Symbol | Význam | Vysvětlení | Příklad |
+| --- | --- | --- | --- |
+| <Latex formula="\displaystyle \sum" /> | Součet řady , suma | <Latex formula="\displaystyle \sum_{k = 1}^{n} a_n = a_1 + a_2 + a_3 + ... + a_n" /> | <Latex formula="\displaystyle \sum_{n = 1}^{4} n = 1 + 2 + 3 + 4 = 10" /> |
+| <Latex formula="\prod" /> | Součin řady | <Latex formula="\displaystyle \prod_{k = 1}^{n} a_k = a_1 \cdot a_2 \cdot a_n" /> | <Latex formula="\displaystyle \prod_{k = 1}^{4} (k + 1) = (1 + 1)(2 + 1)(3 + 1)(4 + 1) = 2 \cdot 3 \cdot 4 \cdot 5 = 120" /> | 
+| <Latex formula="'" /> | Derivace | <Latex formula="f'(x)" /> | <Latex formula="f(x) = x^2 \implies f'(x) = 2x" />  |
+| <Latex formula="\displaystyle \int" /> | Integrál | <Latex formula="\displaystyle \int f(x) dx" /> Je funkce jejiž derivace je f | <Latex formula="\displaystyle \int x^2 dx = \frac{x^3}{3} + c , c \in \Reals" /> |
+| <Latex formula="\partial" /> | Parciální derivace | <Latex formula="\frac{\partial f}{\partial x}" /> | |
