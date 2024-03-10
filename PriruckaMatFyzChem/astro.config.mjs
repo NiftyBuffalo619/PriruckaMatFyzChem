@@ -254,6 +254,12 @@ export default defineConfig({
               }
             }]
           }]
+        },{
+          label: "Diferenciální počet",
+          items: [{
+            label: "Tabulka Derivací",
+            link: "matematika/matematickaanalyza/diferencialnipocet/tabulkaderivaci"
+          }]
         }, {
           label: "Nekonečné řady",
           items: [{
