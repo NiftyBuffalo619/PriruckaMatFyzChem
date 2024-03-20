@@ -259,6 +259,12 @@ export default defineConfig({
           items: [{
             label: "Tabulka Derivací",
             link: "matematika/matematickaanalyza/diferencialnipocet/tabulkaderivaci"
+          }, {
+            label: "Derivace součtu a rozdílu",
+            link: "matematika/matematickaanalyza/diferencialnipocet/derivacesouctuarozdilu"
+          }, {
+            label: "Derivace součinu a rozdílu",
+            link: "matematika/matematickaanalyza/diferencialnipocet/derivacesoucinuapodilu"
           }]
         }, {
           label: "Nekonečné řady",

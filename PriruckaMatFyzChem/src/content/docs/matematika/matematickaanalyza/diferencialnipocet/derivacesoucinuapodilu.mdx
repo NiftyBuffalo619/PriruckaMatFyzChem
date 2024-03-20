@@ -1,0 +1,19 @@
+---
+title: Derivace součinu a podílu
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Pokud máme v součinu funkce $$ f $$ a $$ g $$, tak jsou jejich derivace následující
+<Latex formula="\big( f(x) \cdot g(x) \big)' = f'(x) \cdot g(x) + f(x) \cdot g'(x)" />
+Pokud máme v podílu funkce $$ f $$ a $$ g $$, tak jsou jejich derivace následující 
+<Latex formula="\displaystyle \Bigg( \frac{f(x)}{g(x)} \Bigg)' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^2(x)}" />
+
+### Příklady
+<Latex formula="( \sin x \cos x)' = ( \sin x)' \cdot \cos x + \sin x \cdot ( \cos x)' = \cos^2 x + \sin x \cdot (- \sin x) = \cos^2 x - \sin^2 x = \cos 2x" />
+<Latex formula="\displaystyle \big (\underbrace{(3x^2 - 1)}_{f(x) \text{}} \underbrace{e^x}_{g(x) \text{}} \big) = (3x^2 - 1)' \cdot e^x + (3x^2 - 1)(e^x)' = (3 \cdot 2x - 0) \cdot e^x + 6x e^x + (3x^2 - 1) e^x = 6x e^x + 3x^2 e^x - e^x = e^x (6x + 3x^2 - 1)" />
+
+
+
+
+<Latex formula="\displaystyle \Big( \frac{\ln (x)}{\sin (x)} \Big)' = \frac{ \ln(x)' \cdot  \sin x  - \ln x \cdot ( \sin x)' }{ \sin^2 x} = \frac{\frac{1}{x} \sin x - \ln x \cos x}{\sin^2 x}" />
