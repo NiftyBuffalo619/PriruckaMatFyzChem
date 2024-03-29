@@ -6,6 +6,14 @@ import Latex from "../../../../../components/Latex.astro";
 
 Pokud máme v součinu funkce $$ f $$ a $$ g $$, tak jsou jejich derivace následující
 <Latex formula="\big( f(x) \cdot g(x) \big)' = f'(x) \cdot g(x) + f(x) \cdot g'(x)" />
+<details>
+<summary>Důkaz</summary>
+<Latex formula="\lim\limits_{h \to 0} \frac{f (x + h) \cdot g(x + h) - f(x) \cdot g(x)}{h} = \lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x + h) + f(x) \cdot g(x + h) - f(x) \cdot g(x)}{h} " />
+<Latex formula="\lim\limits_{h \to 0} \frac{f(x + h) \cdot g(x + h) - f(x) \cdot g(x + h)}{h} + \lim\limits_{h \to 0} \frac{f(x) \cdot g(x + h) - f(x) \cdot g(x)}{h} = " />
+
+<Latex formula="\lim\limits_{h \to 0} \frac{f(x + h) - f(x)}{h} \cdot \lim\limits_{h \to 0} g(x + h) + f(x) \cdot \lim\limits_{h \to 0} \frac{g(x + h) - g(x)}{h} = f'(x) \cdot g'(x) + f(x) \cdot g'(x)" />
+
+</details>
 Pokud máme v podílu funkce $$ f $$ a $$ g $$, tak jsou jejich derivace následující 
 <Latex formula="\displaystyle \Bigg( \frac{f(x)}{g(x)} \Bigg)' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^2(x)}" />
 

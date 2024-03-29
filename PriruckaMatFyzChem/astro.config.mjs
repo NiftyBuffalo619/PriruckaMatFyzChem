@@ -263,7 +263,7 @@ export default defineConfig({
             label: "Derivace součtu a rozdílu",
             link: "matematika/matematickaanalyza/diferencialnipocet/derivacesouctuarozdilu"
           }, {
-            label: "Derivace součinu a rozdílu",
+            label: "Derivace součinu a podílu",
             link: "matematika/matematickaanalyza/diferencialnipocet/derivacesoucinuapodilu"
           }]
         }, {
