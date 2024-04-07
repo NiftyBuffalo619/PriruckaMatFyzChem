@@ -241,6 +241,9 @@ export default defineConfig({
             label: "Limity s faktoriály",
             link: "matematika/matematickaanalyza/limity/limitysfaktorialy"
           },{
+            label: "Speciální limity",
+            link: "matematika/matematickaanalyza/limity/specialnilimity"
+          },{
             label: "Věty o Limitách",
             link: "matematika/matematickaanalyza/limity/vetyolimitach"
           }, {
