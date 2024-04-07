@@ -1,0 +1,86 @@
+---
+title: Rovnice s absolutní hodnotou
+---
+
+import Latex from "../../../../components/Latex.astro";
+
+<Latex formula="|u + 3| = 8 - |2 - 3u|" />
+<details>
+<summary>Řešení</summary>
+<Latex formula="| u + 3 | = 8 - | 2 - 3u |" />
+Nejprve si najdeme nulové body to jsou body kde bude výraz roven nule
+<Latex formula="u + 3 = 0" />
+<Latex formula="u = - 3" />
+Druhý výraz 
+<Latex formula="2 - 3u = 0" />
+<Latex formula="-3u = -2" />
+<Latex formula="\displaystyle u = \frac{2}{3}" />
+
+Nyní sestavíme tabulky kdy do jednotlivých výraz dosazujeme hodnoty s intervalu
+| Výraz | $$ (- \infty ; -3 ) $$ | $$ (-3; \frac{2}{3}) $$ | $$ (\frac{2}{3}; \infty) $$ | 
+| --- | --- | --- | --- |
+| $$ u + 3 $$ | $$ - $$ | $$ + $$  | $$ + $$ |
+| $$ 2 - 3u $$ | $$ - $$ | $$ + $$ |  $$ + $$ |
+
+
+Nyní budeme rovnici řešit v daných intervalech podle znaménka.
+<h3>V intervalu $$ (- \infty ; -3) $$ </h3>
+Před výraz dáme znaménko jaké vyšlo v tabulce pro daný interval
+<Latex formula="-(u + 3) = 8 - (2 - 3u)" />
+<Latex formula="-u - 3 = 8 - 2 + 3u" />
+<Latex formula="-4u = 9" />
+<Latex formula="u = - \frac{9}{4}" />
+<Latex formula="u = - \frac{3}{2} \notin (- \infty ; -3)" />
+Jelikož hodnota není součastí intervalu není řešením
+
+<h3>V intervalu $$ (-3 ; \frac{2}{3}) $$ </h3>
+<Latex formula="u + 3 = 8 - 2 + 3u" />
+<Latex formula="-2u = 3" />
+<Latex formula="u = - \frac{3}{2} \in (-3 ; \frac{3}{2})" />
+Zde je součástí intervalu, proto je řešením
+
+<h3>V intervalu $$ (\frac{2}{3}; \infty) $$ </h3>
+<Latex formula="u + 3 = 8 + 2 - 3u" />
+<Latex formula="4u = 7" />
+<Latex formula="u = \frac{7}{4}" />
+
+Řešením je <Latex formula="u \in \lbrace - \frac{3}{2} ; \frac{7}{4} \rbrace" />
+</details>
+
+<Latex formula="|2x + 1| - |3-x| = x" />
+<details>
+<summary>Řešení</summary>
+Opět najdeme nulové body
+<Latex formula="2x + 1 = 0" />
+<Latex formula="2x = -1" />
+<Latex formula="x = - \frac{1}{2}" />
+Druhý výraz
+<Latex formula="3 - x = 0" />
+<Latex formula="- x = -3" />
+<Latex formula="x = 3" />
+
+Uděláme tabulku 
+| Výraz | $$ (- \infty ; - \frac{1}{2}) $$ | $$ (- \frac{1}{2}; 3) $$ | $$ (3; \infty) $$ | 
+| --- | --- | --- | --- |
+| $$ 2x + 1 $$ | $$ - $$ | $$ + $$  | $$ + $$ |
+| $$ 3 - x $$ | $$ - $$ | $$ - $$ |  $$ + $$ |
+
+<h3>V intervalu $$ (- \infty ; - \frac{1}{2}) $$ </h3>
+<Latex formula="-2x -1 - 3 + x = x" />
+<Latex formula="-x -4 = x" />
+<Latex formula="-2x = 4" />
+<Latex formula="x = -2 \in (- \infty ; - \frac{1}{2})" />
+
+<h3>V intervalu $$ (- \frac{1}{2}; 3) $$</h3>
+<Latex formula="2x + 1 - 3 + x = x" />
+<Latex formula="3x - 2 = x" />
+<Latex formula="2x = 2" />
+<Latex formula="x = 1 \in (- \frac{1}{2}; 3)" />
+
+<h3>V intervalu $$ (3; \infty) $$</h3>
+<Latex formula="2x + 1 + 3 - x = x" />
+<Latex formula="x + 4 = x" />
+<Latex formula=" 4 \neq 0" />
+
+Řešením je <Latex formula="x \in \lbrace -2 ; 1 \rbrace" />
+</details>

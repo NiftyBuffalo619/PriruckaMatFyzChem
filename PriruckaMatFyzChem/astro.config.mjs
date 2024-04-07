@@ -121,6 +121,12 @@ export default defineConfig({
             link: "matematika/algebra/linearnirovnice"
           }]
         },{
+          label: "Rovnice Nerovnice s absolutní hodnotou",
+          items:[{
+            label: "Rovnice s absolutní hodnotou",
+            link: "matematika/algebra/rovnicesabsolutnidhodnotou"
+          }]
+        },{
           label: "Logaritmy",
           items: [{
               label: 'Úvod',
