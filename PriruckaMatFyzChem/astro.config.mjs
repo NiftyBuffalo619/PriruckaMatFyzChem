@@ -189,6 +189,12 @@ export default defineConfig({
           }]
         }], 
       },{
+        label: "Kombinatorika a binomická věta",
+        items: [{
+          label: "Variace bez opakování",
+          link: "matematika/kombinatorika/variacebezopakovani"
+        }]
+      },{
         label: "Matematická Analýza",
         items: [{
           label: "Úvod",

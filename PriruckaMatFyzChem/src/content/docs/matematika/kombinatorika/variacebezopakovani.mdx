@@ -1,0 +1,25 @@
+---
+title: Variace bez opakování
+---
+import Latex from "../../../../components/Latex.astro";
+
+### Definice 
+Variace bez opakování je $$k$$-členná skupina z $$n$$ prvků ($$k$$-tice) uspořádaná tak, že každý člen se v ní vyskytuje nejvýše jednou a záleží na pořadí.
+<br />
+<br />
+$$k$$-členná variace z $$n$$ prvků znamená, že ze všech různých možností $$n$$ vybíráme takové $$k$$, kde platí $$k \leq n $$. 
+### Příklad 
+
+Představme si situaci, kdy máme 4 různé barvy pastelek: červenou, modrou, zelenou a žlutou.
+Máme dvě pastelky a chceme vytvořit různě zabarvený obrázek tak, aby pořadí pastelek hrálo roli.Kolik různých obrázků můžeme nakreslit s použitím tří pastelek?
+1. První pastelka: Máme čtyři možnosti jak vybrat první pastelku, protože máme čtyři různé barvy pastelek.
+2. Druhá pastelka: Po vybrání první pastelky nám zbývají tři možnosti vybrat druhou pastelku, protože se každá pastelka může vybrat jen jednou.
+3. Třetí pastelka: Po vybrání prvních dvou pastelek máme ještě dvě možnosti vybrat třetí pastelku.
+Celkový počet různých uspořádání tří pastelek (variace bez opakování) je tedy součinem počtu možností pro první pastelku (tzv. Kombinatorický součin), počtu možností pro druhou pastelku a počtu možností pro třetí pastelku.
+Početně
+<Latex formula="4 \cdot 3 \cdot 2 = 24" />
+To znamená, že existuje 24 různých způsobů, jak vybrat a uspořádat tři pastelky z čtyř různých barev, přičemž pořadí hraje roli. Každá z těchto variací bude mít jiné pořadí barev, což vytvoří různě zabarvený obrázek.
+
+### Vzorec
+Počet $$ V(k , n) $$ všech $$k$$-členných variací z $$n$$ prvků je   
+<Latex formula="V(k , n) = n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot (n - k + 1)" />
