@@ -1,0 +1,20 @@
+---
+title: Permutace bez opakování
+---
+import Latex from "../../../../components/Latex.astro";
+
+Permutace je speciální příklad variací kdy $$ n = k $$. Jinak řečeno z ze všech zadaných prvků vybereme všechny.
+### Definice 
+Permutace z $$n$$ prvků je je každá $$n$$-členná variace těchto prvků.
+Permutace sestavená z $$n$$ prvků je uspořádaná $$n$$-tice, která obsahuje každý prvek právě jednou.
+### Vzorec
+Počet permutací z $$n$$ prvků lze odvodit z variací 
+<Latex formula="V(k;n) = n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot (n - k + 1)" />
+
+V tomto případě je $$n = k$$
+<Latex formula="V(k;n) = n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot (n - n + 1)" />
+<Latex formula="n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot 3 \cdot 2 \cdot \cdot 1" />
+Počet všech permutací zapisujeme jako $$P(n)$$ a platí
+<Latex formula="P(n) = n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot 3 \cdot 2 \cdot \cdot 1" />
+Nebo pomocí faktoriálu
+<Latex formula="P(n) = n!" />

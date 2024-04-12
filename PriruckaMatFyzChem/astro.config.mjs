@@ -193,6 +193,9 @@ export default defineConfig({
         items: [{
           label: "Variace bez opakování",
           link: "matematika/kombinatorika/variacebezopakovani"
+        }, {
+          label: "Permutace bez opakování",
+          link: "matematika/kombinatorika/permutacebezopakovani"
         }]
       },{
         label: "Matematická Analýza",
