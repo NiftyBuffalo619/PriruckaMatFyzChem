@@ -196,6 +196,12 @@ export default defineConfig({
         }, {
           label: "Permutace bez opakování",
           link: "matematika/kombinatorika/permutacebezopakovani"
+        }, {
+          label: "Faktoriál",
+          link: "matematika/kombinatorika/faktorial"
+        }, {
+          label: "Kombinace bez opakování",
+          link: "matematika/kombinatorika/kombinacebezopakovani"
         }]
       },{
         label: "Matematická Analýza",

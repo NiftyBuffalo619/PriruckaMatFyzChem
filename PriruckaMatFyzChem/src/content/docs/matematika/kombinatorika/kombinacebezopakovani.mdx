@@ -1,0 +1,31 @@
+---
+title: Kombinace bez opakování
+---
+import Latex from "../../../../components/Latex.astro";
+
+Kombinace jsou velmi podobné variacím až na to, že u kombinacích nezáleží na pořadí vybraných prvků.
+
+### Definice
+$$k$$-členná kombinace z $$n$$ prvků je neuspořádaná $$k$$-tice sestavená z těchto prvků tak, že se každý člen v ní vyskytuje nejvýše jednou.
+
+| Tříčlenné variace z prvků $$ a, b, c, d $$        | 
+|------------------- |
+| $$ (a,b,c)            (a,c,b)            (b,a,c)    $$       | 
+| $$ (b,c,a)            (c,a,b)            (c,b,a)    $$       | 
+| $$ (a,b,d)            (a,d,b)            (b,a,d)       $$    | 
+| $$ (b,d,a)            (d,a,b)           (d,b,a)        $$    | 
+| $$ (a,c,d)           (a,d,c)           (c,a,d)         $$    | 
+| $$ (c,d,a)            (d,a,c)            (d,c,a)       $$    | 
+| $$ (b,c,d)            (b,d,c)            (c,b,d)       $$    | 
+| $$ (c,d,b)            (d,b,c)            (d,c,b)       $$    | 
+
+| Tříčlenné kombinace z prvků |
+| ------------ |
+| $$ \{ a,b,c \}	\{ a,b,d \}	\{ a,c,d \}	\{ b,c,d \} $$ |
+
+Každé tříčlenné kombinaci ze čtyř prvků odpovídá $$3!=6$$ tříčlenných variací ze stejných čtyř prvků.
+Obecně platí, že každá $$k$$-členná kombinace z $$n$$ prvků odpovídá $$k!$$ $$k$$-členných variací ze stejných $$n$$ prvků.
+Z toho můžeme vyvodit vztah mezi počtem $$k$$-členných kombinací z $$n$$ prvků $$K(k,n)$$ a počtem $$k$$-členných variací z $$n$$ prvků $$V(k,n)$$
+To můžeme dále rozepsat
+<Latex formula="K(k;n) = \frac{1}{k!} \cdot V(k;n) = \frac{1}{k!} \cdot \frac{n!}{(n - k)!} = \frac{n!}{k! \cdot (n - k)! }" />
+<Latex formula="K(k;n) = \frac{n!}{k!(n - k)!}" />
