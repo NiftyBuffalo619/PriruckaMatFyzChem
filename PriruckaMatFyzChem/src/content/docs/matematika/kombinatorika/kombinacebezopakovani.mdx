@@ -27,5 +27,23 @@ Každé tříčlenné kombinaci ze čtyř prvků odpovídá $$3!=6$$ tříčlenn
 Obecně platí, že každá $$k$$-členná kombinace z $$n$$ prvků odpovídá $$k!$$ $$k$$-členných variací ze stejných $$n$$ prvků.
 Z toho můžeme vyvodit vztah mezi počtem $$k$$-členných kombinací z $$n$$ prvků $$K(k,n)$$ a počtem $$k$$-členných variací z $$n$$ prvků $$V(k,n)$$
 To můžeme dále rozepsat
-<Latex formula="K(k;n) = \frac{1}{k!} \cdot V(k;n) = \frac{1}{k!} \cdot \frac{n!}{(n - k)!} = \frac{n!}{k! \cdot (n - k)! }" />
+<Latex formula="\boxed{K(k;n) = \frac{1}{k!} \cdot V(k;n) = \frac{1}{k!} \cdot \frac{n!}{(n - k)!} = \frac{n!}{k! \cdot (n - k)! }}" />
 <Latex formula="K(k;n) = \frac{n!}{k!(n - k)!}" />
+
+### Příklady
+Ve třídě je 24 žáků. Kolika způsoby lze vybrat 2 zástupce ze třídy? 
+Protože nezáleží na pořadí, tak se jedná o dvoučlenné kombinace z 24 prvků. A můžeme dosadit do vzorce.
+<Latex formula="K(2;24) = \frac{24!}{2! 22!} = \frac{24 \cdot 23 \cdot \cancel{22!}}{2! \cancel{22!}} = \frac{24 \cdot 23}{2} = 276" />
+Určete počet všech tříprvkových podmnožin množiny $$ \{ 1;2;3;4;5;6;7;8;9 \} $$
+Počet všech tříprvkových podmnožin množiny je stejný jako počet všech trojčlenných kombinací z jeho prvků.
+Proto je počet všech podmnožin roven
+<Latex formula="K(3;10) = \frac{9!}{3! 6!} = \frac{9 \cdot 8 \cdot 7 \cdot \cancel{6!}}{3! \cancel{6!}} = 84" />
+
+### Kombinační číslo
+Kombinační číslo je symbol podobající se zlomku, jež označuje počet $$k$$-členných kombinací z $$n$$ prvků.
+
+Pro všechna celá nezáporná čísla $$n , k $$, kde $$ k \leq n $$ platí
+<Latex formula="\boxed{\dbinom{n}{k} = \frac{n!}{k!(n - k)!}}" />
+Symbol $$ \dbinom{n}{k} $$ čteme jako $$n$$ nad $$k$$ 
+Všechyn kombinace můžeme zapsat kombinačním číslem. Platí, že Počet $$ K(k;n) $$ všech $$k$$-členných kombinací z $$n$$ prvků je
+<Latex formula="\boxed{K(k;n) = \dbinom{n}{k}}" />
