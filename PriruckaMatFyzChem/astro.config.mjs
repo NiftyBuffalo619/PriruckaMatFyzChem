@@ -127,6 +127,12 @@ export default defineConfig({
             link: "matematika/algebra/rovnicesabsolutnidhodnotou"
           }]
         },{
+          label: "Kvadratické rovnice",
+          items: [{
+            label: "Kvadratické rovnice",
+            link: "matematika/algebra/kvadratickerovnice/kvadratickerovnice"
+          }]
+        },{
           label: "Logaritmy",
           items: [{
               label: 'Úvod',

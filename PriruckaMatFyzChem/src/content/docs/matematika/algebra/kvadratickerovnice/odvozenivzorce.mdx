@@ -1,0 +1,37 @@
+---
+title: Odvození vzorce 
+---
+import Latex from "../../../../../components/Latex.astro";
+
+<Latex formula="ax^2 + bx + c = 0" />
+kde $$ a,b,c \in \Reals $$ (jsou realné koeficienty) a $$ a \neq 0 $$
+
+<Latex formula="ax^2 + bx + c = 0" />
+<Latex formula="\displaystyle a \Big( x^2 + \frac{b}{a}x + \frac{c}{a} \Big) = 0" /> 
+Podělíme $$ a $$
+<Latex formula="\displaystyle x^2 + \frac{b}{a}x + \frac{c}{a} = 0" />
+
+Nyní musíme doplnit na čtverec.Nejprve musíme rozšířit $$\displaystyle \frac{b}{a} x $$ dvěmi
+<Latex formula="\displaystyle x^2 + \frac{2b}{2a}x + \frac{c}{a} = 0" />
+Nyní přidáme druhou mocninu $$\displaystyle \frac{b}{a} $$ abychom mohli celý ten výraz rozložit na čtverec 
+<Latex formula="\displaystyle \green{x^2 + \frac{2b}{2a}x + \frac{b^2}{4a^2}} - \frac{b^2}{4a^2} + \frac{c}{a} = 0" />
+Druhou závorku dáme do jednoho zlomku a vytkneme $$ -1 $$
+<Latex formula="\displaystyle \green{x^2 + \frac{2b}{2a}x + \frac{b^2}{4a^2}} - \blue{ \Big( \frac{b^2 - 4ac}{4a^2} \Big)} = 0" />
+<Latex formula="\displaystyle \green{x^2 + \frac{2b}{2a}x + \frac{b^2}{4a^2}} - \blue{ \Big( \frac{\sqrt{b^2 - 4ac}}{2a} \Big)^2} = 0" />
+<Latex formula="\displaystyle \green{ \Big( x + \frac{b}{2a} \Big)^2 } - \blue{ \Big( \frac{\sqrt{b^2 - 4ac}}{2a} \Big)^2} = 0" />
+Zelenou je označen první čtverec, který jsme rozložili pomocí vzorce $$ (a+b)^2 = a^2 + 2ab + b^2 $$. Modrou je označen druhý čtverec ten jsme odmocnili a dali na druhou
+abychom zachovali rovnost
+Nyní si všiměte, že máme oba čtverce umocněné na druhou To můžeme rozložit pomocí vzorce $$ (a - b)(a + b) = a^2 - b^2 $$
+<Latex formula="\displaystyle \Big(\green{x + \frac{b}{2a}} - \blue{ \frac{\sqrt{b^2 - 4ac}}{2a} } \Big) \Big(\green{ x - \frac{b}{2a} } + \blue { \frac{\sqrt{b^2 - 4ac}}{2a} } \Big) = 0" />
+Zelená je A. Modrá je B.
+Nyní vememe vyřešíme pro jednotlivé závorky
+<Latex formula="\displaystyle x_1 + \frac{b}{2a} - \frac{\sqrt{b^2 - 4ac}}{2a} = 0" />
+<Latex formula="\displaystyle x_1 = - \frac{b}{2a} + \frac{\sqrt{b^2 - 4ac}}{2a}" />
+<Latex formula="\displaystyle x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}" />
+Druhá závorka
+<Latex formula="\displaystyle x_2 + \frac{b}{2a} + \frac{\sqrt{b^2 - 4ac}}{2a} = 0" />
+<Latex formula="\displaystyle x_2 =  - \frac{b}{2a} - \frac{\sqrt{b^2 - 4ac}}{2a}" />
+<Latex formula="\displaystyle x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}" />
+
+Dostáváme proto vzorec 
+<Latex formula="\displaystyle \boxed{ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} }" />

@@ -1,0 +1,52 @@
+---
+title: Kvadratické rovnice
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Kvadratická rovnice je algebraická rovnice druhého stupně, kterou lze vyjádřit ve tvaru
+<Latex formula="ax^2 + bx + c = 0" />
+kde $$ a,b,c \in \Reals $$ (jsou realné koeficienty) a $$ a \neq 0 $$
+Kvadratické rovnice lze řešit dvěma způsoby a to rozložení pomocí Vietových vzorců nebo přes Diskriminant.
+
+### Diskriminant
+
+Diskriminant je hodnota, která nám poskytuje informaci o počtu a typu kořenů kvadratické rovnice. Diskriminant $$ D $$ se vypočítá pomocí následujícího vzorce:
+<Latex formula="D = b^2 - 4ac" />
+Na základě hodnoty diskriminantu můžeme určit povahu kořenů kvadratické rovnice:
+1. Pokud $$ D > 0 $$, má rovnice dva různé realné kořeny
+2. Pokud $$ D = 0 $$, rovnice má jeden realný kořen (dvojnásobný kořen)
+3. Pokud $$ D < 0 $$, rovnice nemá žádné realné kořeny, ale má dva komplexní kořeny viz Komplexní čísla
+
+### Řešení pomocí Vietových vzorců
+
+Je dána rovnice 
+<Latex formula="x^2 + 2x - 8 = 0" />
+Rovnici podle Vietových vzorců můžeme rozložit na 
+<Latex formula="(x - 2)(x + 4) = 0" />
+protože $$ -2 \cdot 4 = -8 $$ a $$ -2 + 4 = 2$$
+
+Nyní vyřešíme pro jednoutlivé závorky
+<Latex formula="x - 2 = 0" />
+<Latex formula="x = 2" />
+<Latex formula="x + 4 = 0" />
+<Latex formula="x = - 4" />
+Řešením tedy je 
+<Latex formula="x \in \{ -2 ; 4 \}" />
+
+### Řešením pomocí vzorce
+Kvadratické rovnice lze řešit podle všeobecného vzorce, který je
+<Latex formula="\boxed{x_{1,2} = \frac{- b \pm \sqrt{D}}{2a}}" />
+<Latex formula="\boxed{x_{1,2} = \frac{- b \pm \sqrt{b^2 - 4ac}}{2a}}" />
+<a href="/matematika/algebra/kvadratickerovnice/odvozenivzorce" >Odvození vzorce</a>
+
+Je dána rovnice 
+<Latex formula="x^2 + 2x - 8 = 0" />
+Dosadíme do vzorce pro Diskriminant 
+<Latex formula="D = 4 + 32" />
+<Latex formula="D = 36" />
+
+Dosadíme do vzorce 
+<Latex formula="x_{1,2} = \frac{-1 \pm \sqrt{36}}{2}" />
+<Latex formula="x_1 = -4" />
+<Latex formula="x_1 = 2" />
