@@ -131,6 +131,9 @@ export default defineConfig({
           items: [{
             label: "Kvadratické rovnice",
             link: "matematika/algebra/kvadratickerovnice/kvadratickerovnice"
+          }, {
+            label: "Odvození vzorce",
+            link: "matematika/algebra/kvadratickerovnice/odvozenivzorce"
           }]
         },{
           label: "Logaritmy",
