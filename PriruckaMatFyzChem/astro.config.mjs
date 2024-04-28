@@ -211,6 +211,9 @@ export default defineConfig({
         }, {
           label: "Kombinace bez opakování",
           link: "matematika/kombinatorika/kombinacebezopakovani"
+        }, {
+          label: "Variace s opakováním",
+          link: "matematika/kombinatorika/variacesopakovanim"
         }]
       },{
         label: "Matematická Analýza",

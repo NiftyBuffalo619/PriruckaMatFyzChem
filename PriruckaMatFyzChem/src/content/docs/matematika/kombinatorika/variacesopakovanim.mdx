@@ -1,0 +1,36 @@
+---
+title: Variace s opakováním
+---
+import Latex from "../../../../components/Latex.astro";
+
+### Definice
+$$k$$-členná variace s opakováním z $$n$$ prvků je uspořádaná $$k$$-tice sestavená z těchto prvků tak, že každý člen se v ní vyskytuje nejvýšše $$k$$-krát. 
+
+U variací bez opakování bylo k omezeno velikostí $$n$$, což určuje počet různých prvků, ze kterých vybíráme.
+U variací s opakováním však má n trochu jiný význam: udává počet různých typů prvků, například počet barev, číslic nebo písmen, z nichž můžeme vybírat opakovaně.
+Proto může být $$ k > n $$.
+Zde je uvedený příklad všech tříčlenných variací s opakováním ze dvou prvků $$a$$ a $$b$$:
+
+<Latex formula="(a,a,a) (a,a,b) (a,b,a) (a,b,b) (b,a,a) (b,a,b) (b,b,a) (b,b,b)" />
+### Příklad
+Máme 5 sklenic s bonbony. V každé sklenici je neomezené množství bonbonů jednoho druhu a žádné dvě sklenice neobsahují bonbony stejného druhu. Například jedna sklenice obsahuje bonbony jahodové, další čokoládové, další mátové, další karamelové a poslední ovocné bonbony. Kolik různých trojic bonbonů lze vytvořit?
+
+Pro výběr prvního bonbonu můžeme vybrat bonbon z libovolné ze sklenic, což nám dává pět možností.
+Pro výběr druhého bonbonu můžeme opět vybrat bonbon z libovolné ze sklenic, což nám opět dává pět možností.
+Totéž platí pro třetí bonbon, který také můžeme vybrat z libovolné sklenice, což nám opět dává pět možností.
+
+Volby jsou nezávislé, takže podle kombinatorického pravidla součinu existuje celkem $$ 5 \cdot 5 \cdot 5 = 5^3 = 125 $$  různých trojic bonbonů vybraných z pěti sklenic.
+
+### Odvození
+Daný příklad lze zobecnit 
+
+Máme $$n$$ sklenic s bonbony. V každé sklenici je neomezené množství bonbonů jednoho druhu a žádné dvě sklenice neobsahují bonbony stejného druhu (tak jako předtím).
+Kolik různých $$k$$-členných kombinací bonbonů lze vytvořit?
+
+Při výběru k bonbonů z $$n$$ sklenic začněte tím, že určíte počet sklenic $$n$$ a počet bonbonů, které chcete vybrat $$k$$.
+Poté vyberete první bonbon z libovolné ze $$n$$ sklenic, což vám dává $$n$$ možností pro tento výběr.
+Opakujte tento výběr $$k$$-krát, přičemž pro každý bonbon máte $$n$$ možností, protože každý může být vybrán z libovolné sklenice.
+Protože jsou volby nezávislé, vynásobte počet možností pro každý výběr, abyste zjistili celkový počet různých $$k$$-členných kombinací bonbonů, což je $$n^k$$.
+
+Variace s opakováním zapisujeme jako
+<Latex formula="\boxed{V'(k; n) = n^k}" />
