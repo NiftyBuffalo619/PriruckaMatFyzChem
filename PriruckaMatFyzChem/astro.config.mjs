@@ -214,6 +214,9 @@ export default defineConfig({
         }, {
           label: "Variace s opakováním",
           link: "matematika/kombinatorika/variacesopakovanim"
+        }, {
+          label: "Permutace s opakováním",
+          link: "matematika/kombinatorika/permutacesopakovanim"
         }]
       },{
         label: "Matematická Analýza",

@@ -1,0 +1,90 @@
+---
+title: Permutace s opakovaním
+---
+import Latex from "../../../../components/Latex.astro";
+
+### Definice
+Permutace s opakováním z $$n$$ prvků je uspořádaná $$k$$-tice vytvořená z těchto prvků, přičemž každý prvek se v $$k$$-tici vyskytuje alespoň jednou.
+
+Vztah mezi $$k$$ a $$n$$ je následující:
+
+Přirozené číslo $$n$$ představuje počet různých prvků.
+Každý prvek může mít více opakování: obvyklým označením je $$k_1$$ pro počet opakování prvního prvku, $$k_2$$ pro počet opakování druhého prvku,
+a tak dále, přičemž počet opakování posledního, tedy $$n$$-tého prvku, se označuje jako $$k_n$$.
+Přirozené číslo k vyjadřuje celkový počet všech prvků, jejichž různá pořadí analyzujeme. Platí tedy, že
+<Latex formula="k = k_1 + k_2 + \cdots + k_n" />
+
+### Příklad 
+Máme-li 20 bílých kostek, 30 černých kostek a 40 modrých kostek  a chceme je seřadit do řady, jedná se o permutace s opakováním ze tří prvků.
+První prvek se objevuje dvacetkrát, druhý třicetkrát a třetí čtyřicetkrát.
+<Latex formula="n = 3" />
+<Latex formula="k_1 = 20" />
+<Latex formula="k_2 = 30" />
+<Latex formula="k_3 = 40" />
+<Latex formula="k = k_1 + k_2 + k_3 = 90" />
+
+
+Zkusme zjistit počet všech možných pořadí pěti prvků, ve kterých se jeden prvek opakuje třikrát a další dva jsou různé.
+Toto odpovídá permutaci s opakováním ze tří prvků, kde první prvek se vyskytuje třikrát, druhý prvek jednou a třetí prvek také jednou. Označíme tyto prvky jako $$a,a,a,b,c$$
+
+Začneme tím, že přeznačíme tři opakované prvky jako $$a_1, a_2, a_3$$ a necháme prvky $$b$$ a $$c$$ beze změny. 
+Počet možných pořadí pěti různých prvků bez opakování je $$P(5) = 5! = 120$$.
+| Pokud odebereme indexy u prvků $$a_1, a_2, a_3$$, zjistíme, že některá pořadí jsou stejná. Například pořadí $$(a_1, b, a_2, a_3, c) a (a_1, b, a_3, a_2, c)$$ jsou ekvivalentní po odebrání indexů u $$a_1, a_2, a_3$$. |
+| --- |
+| <Latex formula="(a_1,b,a_3,a_2,c)" /> |
+| <Latex formula="(a_1,b,a_2,a_3,c)" /> |
+| <Latex formula="(a_2,b,a_1,a_3,c)" /> |
+| <Latex formula="(a_2,b,a_3,a_1,c)" /> |
+| <Latex formula="(a_3,b,a_1,a_2,c)" /> |
+| <Latex formula="(a_3,b,a_2,a_1,c)" /> |
+
+Každé pořadí prvků $$a, a, a, b, c$$ odpovídá šesti pořadím prvků $$a_1, a_2, a_3, b, c$$, kde $$b$$ a $$c$$ zůstávají na stejných místech, zatímco $$a_1, a_2, a_3$$ se kombinují všemi možnými způsoby.
+Tyto různé permutace prvků $$a_1, a_2, a_3$$ můžeme uspořádat šesti způsoby, což je $$P(3) = 3! = 6$$.
+Proto je počet možných pořadí prvků $$a, a, a, b, c$$ šestkrát menší než počet možných pořadí prvků $$a_1, a_2, a_3, b, c$$.
+
+Počet možných pořadí prvků $$a, a, a, b, c$$ je tedy
+<Latex formula="\displaystyle \frac{120}{3!} = \frac{120}{3!} = 20" />
+
+Nakonec je možné pro kontrolu vypsat všech 20 různých pořadí prvků $$a, a, a, b, c$$:
+<details>
+<summary>Zobrazit</summary>
+<Latex formula="(a,a,a,b,c)" />
+<Latex formula="(a,a,a,c,b)" />
+<Latex formula="(a,a,b,a,c)" />
+<Latex formula="(a,a,c,a,b)" />
+<Latex formula="(a,a,b,c,a)" />
+<Latex formula="(a,a,c,b,a)" />
+<Latex formula="(a,b,a,a,c)" />
+<Latex formula="(a,c,a,a,b)" />
+<Latex formula="(a,b,a,c,a)" />
+<Latex formula="(a,c,a,b,a)" />
+<Latex formula="(a,b,c,a,a)" />
+<Latex formula="(a,c,b,a,a)" />
+<Latex formula="(b,a,a,a,c)" />
+<Latex formula="(c,a,a,a,b)" />
+<Latex formula="(b,a,a,c,a)" />
+<Latex formula="(c,a,a,b,a)" />
+<Latex formula="(b,a,c,a,a)" />
+<Latex formula="(c,a,b,a,a)" />
+<Latex formula="(b,c,a,a,a)" />
+<Latex formula="(c,b,a,a,a)" />
+</details>
+
+Pokud máme 4 nádoby s kuličkami: jednu nádobu s $$k_1$$ bílými kuličkami, jednu nádobu s $$k_2$$ červenými kuličkami,
+jednu nádobu s $$k_3$$ zelenými kuličkami a jednu nádobu s $$k_4$$ modrými kuličkami. Musíme určit, kolika způsoby lze seřadit všechny tyto kuličky.
+
+Jedná se o permutace ze čtyř prvků s opakováním, kde se první prvek vyskytuje $$k_1$$-krát, druhý prvek $$k_2$$-krát, třetí prvek $$k_3$$-krát a čtvrtý prvek $$k_4$$-krát.
+Nejdříve určíme, kolika způsoby bychom mohli kuličky uspořádat, kdyby byly všechny různé. Celkový počet kuliček je $$k_1 + k_2 + k_3 + k_4$$, což znamená,
+že počet jejich uspořádání je:
+<Latex formula="P(k_1 + k_2 + k_3 + k_4) = (k_1 + k_2 + k_3 + k_4)!" />
+Protože kuličky nejsou všechny různé, některá pořadí se budou opakovat:
+
+1. $$k_1!$$ pořadí je stejných, protože se mění pouze pořadí bílých kuliček.
+2. $$k_2!$$ pořadí je stejných, protože se mění pouze pořadí červených kuliček.
+3. $$k_3!$$ pořadí je stejných, protože se mění pouze pořadí zelených kuliček.
+4. $$k_4!$$ pořadí je stejných, protože se mění pouze pořadí modrých kuliček.
+Musíme tedy veškerý počet kuliček podělit právě těmito počty opakování.
+<Latex formula="\displaystyle P'(k_1,k_2,k_3,k_4) = \frac{(k_1 + k_2 + k_3 + k_4)!}{k_1! \cdot k_2! \cdot k_3! \cdot k_4!}" />
+
+Pokud tento postup zobecníme pro $$n$$ nádob s kuličkami, dostaneme následující vzorec:
+<center><Latex formula="\displaystyle \boxed{P'(k_1,k_2, \cdots ,k_n) = \frac{(k_1 + k_2 + \cdots + k_n)!}{k_1! \cdot k_2! \cdots \cdot k_n!}}" /></center>
