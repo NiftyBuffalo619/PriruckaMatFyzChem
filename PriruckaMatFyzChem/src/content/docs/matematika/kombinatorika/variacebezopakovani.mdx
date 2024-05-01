@@ -23,3 +23,7 @@ To znamená, že existuje 24 různých způsobů, jak vybrat a uspořádat tři 
 ### Vzorec
 Počet $$ V(k , n) $$ všech $$k$$-členných variací z $$n$$ prvků je   
 <Latex formula="V(k , n) = n \cdot (n - 1) \cdot (n - 2) \cdot \cdots \cdot (n - k + 1)" />
+Celý tento vzorec lze ještě přepsat
+<Latex formula="V(k ; n) = \frac{n \cdot (n - 1) \cdot (n - 2) \cdots (n - k + 1) \blue{(n - k) \cdot (n - k - 1) \cdots 3 \cdot 2 \cdot 1}}{\blue{(n - k) \cdot (n - k - 1) \cdots 3 \cdot 2 \cdot 1}}" />
+<Latex formula="\displaystyle \boxed{V(k ; n) = \frac{n!}{(n - k)!}}" />
+Platí pro $$n, k \in \N$$ kde $$k \leq n$$
