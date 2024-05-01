@@ -10,8 +10,21 @@ export default defineConfig({
   integrations: [starlight({
     title: 'Příručka MatFyzChem',
     social: {
-      github: 'https://github.com/withastro/starlight'
+      github: 'https://github.com/NiftyBuffalo619'
     },
+    logo: {
+      src: "./src/assets/priruckaicon2.svg"
+    },
+    head: [
+      {
+        tag: "link",
+        attrs: {
+          rel: "icon",
+          href: "/priruckaicon2.svg",
+          sizes: "32x32"
+        }
+      }
+    ],
     sidebar: [{
       label: "📚O Příručce",
       items: [{
