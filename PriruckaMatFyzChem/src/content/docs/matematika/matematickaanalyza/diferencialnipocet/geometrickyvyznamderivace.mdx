@@ -1,0 +1,53 @@
+---
+title: Geometrický význam derivace
+---
+import Latex from "../../../../../components/Latex.astro";
+import { Image } from "astro:assets";
+import Image1 from "../../../../../assets/geometrickyvyznamderivaceobrazek1.svg";
+import Image2 from "../../../../../assets/geometrickyvyznamderivaceobrazek2.svg";
+
+### License 
+Text vychází z díla autorů Miroslavy Jarešové a Iva Volfa a je dostupný pod licencí <a href="https://creativecommons.org/licenses/by/3.0/cz/">CC BY 3.0 CZ</a>.
+Tento text byl upraven z původní verze a je k nalezení <a href="http://fyzikalniolympiada.cz/texty/matematika/difpoc.pdf">zde</a>.
+Všechny obrázky v tomto textu byly upraveny z původních obrázků v <a href="http://fyzikalniolympiada.cz/texty/matematika/difpoc.pdf">tomto textu</a> a patří k původnímu dílu.
+
+
+### Určení tečny křivky
+
+Nechť máme libovolnou křivku. Chceme-li určit tečnu k této křivce v libovolně zvoleném bodě $$M$$ , postupujeme následujícím způsobem:
+
+Kromě bodu $$M$$ si na křivce vybereme ještě bod $$M_1$$, který se liší od bodu $$M$$, a určíme sečnu $$M M_1$$.
+Pokud se bod $$M_1$$ pohybuje podél křivky, sečna $$M M_1$$ se bude otáčet kolem bodu $$M$$.
+Tečnu křivky v bodě $$M$$ pak definujeme jako **limitní polohu sečny** $$M M_1$$, když se bod $$M_1$$ přibližuje k bodu $$M$$ po křivce.
+
+<Image src={Image1} alt="Obrázek geometrického významu derivace" />
+
+
+### Určení směrnice tečny křivky
+
+Když zvýšíme souřadnici $$x$$ bodu $$M$$ o přírůstek $$\Delta x$$, přesuneme se do bodu $$M_1$$, který má souřadnice $$x + \Delta x$$ a $$y + \Delta y$$. Hodnota $$y + \Delta y$$ odpovídá hodnotě $$f(x + \Delta x)$$.
+Směrnici sečny $$M M_1$$, která se rovná $$\tg \varphi$$, lze určit z pravoúhlého trojúhelníka $$M N M_1$$.
+Odvěsna $$M N$$ má délku přírůstku $$\Delta x$$ souřadnice $$x$$ bodu $$M$$, zatímco odvěsna $$N M_1$$ představuje přírůstek souřadnice $$y$$:
+
+<Latex formula="|NM1| = |\Delta y|" />
+
+<Latex formula="|\Delta y| = |f(x + \Delta x) - f(x)|" />
+
+<Latex formula="|N M_1| = |\Delta y|" />
+
+<Latex formula="| \Delta y | = | f(x + \Delta x) - f(x) |" />
+
+<Image src={Image2} alt="" />
+
+Z toho vyplývá
+<Latex formula="\displaystyle \tg \alpha = \frac{\Delta y}{\Delta x} = \frac{f(x + \Delta x) - f(x)}{\Delta x}" />
+Pokud se bod $$M_1$$ pohybuje po křivce směrem k bodu $$M$$, přírůstek $$\Delta x$$ se bude postupně zmenšovat, až dosáhne téměř nuly.
+Proto je nutné při hledání směrnice tečny nalézt limitní hodnotu podílu $$ \displaystyle \frac{\Delta y}{\Delta x} $$  pro $$x \to 0$$
+Označíme-li úhel, který tečna svírá s osou $$x$$, jako $$\alpha$$, získáme následující výsledek:
+<Latex formula="\displaystyle \tg \alpha = \lim\limits_{x \to 0} \frac{\Delta y}{\Delta x} = \lim\limits_{x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} = \frac{ \mathrm{d} y}{\mathrm{d} x}" />
+
+Protože limitní hodnota $$\displaystyle \lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$ je derivací funkce $$y' = f'(x)$$ funkce $$y = f(x)$$, můžeme říci,
+ že směrnice tečny (tj. $$\tg \alpha$$) je derivací souřadnice $$y = f(x)$$ podle souřadnice $$x$$ v bodě $$M$$.
+
+Pokud je směrnice tečny $$y' = \tg \alpha$$ kladná, říkáme, že daná funkce je rostoucí. Naopak, pokud je směrnice tečny $$y' < 0$$, daná funkce je klesající.
+Když má daná funkce v určitém bodě derivaci rovnou nule, tedy $$y' = 0$$, hovoříme o možnosti lokálního extrému nebo inflexního bodu v tomto bodě.
