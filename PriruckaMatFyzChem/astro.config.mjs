@@ -311,6 +311,9 @@ export default defineConfig({
           items: [{
             label: "Tabulka Derivací",
             link: "matematika/matematickaanalyza/diferencialnipocet/tabulkaderivaci"
+          },{
+            label: "Geometrický význam derivace",
+            link: "matematika/matematickaanalyza/diferencialnipocet/geometrickyvyznamderivace"
           }, {
             label: "Derivace součtu a rozdílu",
             link: "matematika/matematickaanalyza/diferencialnipocet/derivacesouctuarozdilu"
