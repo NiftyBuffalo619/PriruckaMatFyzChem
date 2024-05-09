@@ -28,7 +28,7 @@ export default defineConfig({
         tag: "link",
         attrs: {
           rel: "apple-touch-icon",
-          href: "./src/assets/priruckaicon2appletouchid.png",
+          href: "/priruckaicon2appletouchicon.png",
           sizes: "180x180"
         }
       }
