@@ -23,6 +23,14 @@ export default defineConfig({
           href: "/priruckaicon2.svg",
           sizes: "32x32"
         }
+      },
+      {
+        tag: "link",
+        attrs: {
+          rel: "apple-touch-icon",
+          href: "./src/assets/priruckaicon2appletouchid.png",
+          sizes: "180x180"
+        }
       }
     ],
     sidebar: [{
