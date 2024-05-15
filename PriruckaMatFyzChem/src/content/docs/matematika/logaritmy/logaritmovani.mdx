@@ -1,0 +1,39 @@
+---
+title: Logaritmování 
+---
+import Latex from "../../../../components/Latex.astro";
+
+Logaritmování je matematická operace, která je inverzní k umocňování.
+Pokud umocňování vyjadřuje, jaký je výsledek násobení základního čísla sebou samým určitý početkrát, logaritmování určuje, kolikrát musíme základní číslo umocnit, abychom získali dané číslo.
+Základní pojem logaritmu byl zaveden skotským matematikem Johnem Napierem na počátku 17. století.
+
+Rovnice <Latex formula="\displaystyle a^{f(x)} = b^{g(x)} " /> pro $$ x \in \Reals $$ a pro $$ a, b \in \Reals^+ \setminus \{ 1 \} $$
+je ekvivaletní s rovnicí
+<Latex formula="\displaystyle f(x) \cdot \log_{c} a = g(x) \cdot \log_{c} b " /> Pro libovolené $$ c \in \Reals^+ \setminus \{ 1 \} $$
+
+Tuto operaci nazýváme logaritmování 
+
+### Příklady
+
+<Latex formula="3^x = 16^{x + 1}" />
+Použijeme logaritmus se základem 16 na obou stranách rovnice
+<Latex formula="\log_{16} 3^x = \log_{16} 16^{x + 1}" />
+Nyní aplikujeme věty o logaritmech
+<Latex formula="x \cdot \log_{16} 3 = (x + 1) \log_{16} 16" />
+<Latex formula="x \cdot \log_{16} 3 = x + 1" />
+Nyní už jenom vyřešíme rovnici 
+<Latex formula="x \cdot \log_{16} 3 - x = 1" />
+<Latex formula="x ( \log_{16} 3 - 1) = 1" />
+<Latex formula="\displaystyle x = \frac{1}{\log_{16} 3 - 1}" />
+
+<Latex formula="4^x = 18^{x + 1}" />
+<details>
+<summary>Zobrazit Řešení</summary>
+<Latex formula="4^x = 18^{x + 1}" />
+<Latex formula="\log_{18} 4^x = \log_{18} 18^{x + 1}" />
+<Latex formula="x \cdot \log_{18} 4 = (x + 1) \log_{18} 18" />
+<Latex formula="x \cdot \log_{18} 4 = x + 1" />
+<Latex formula="x \cdot \log_{18} 4 - x = 1" />
+<Latex formula="x ( \log_{18} 4 - 1) = 1" />
+<Latex formula="\displaystyle x = \frac{1}{\log_{18} 4 - 1}" />
+</details>

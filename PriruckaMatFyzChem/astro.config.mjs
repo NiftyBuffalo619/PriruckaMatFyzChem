@@ -171,6 +171,9 @@ export default defineConfig({
           }, {
             label: 'Věty o logaritmech',
             link: 'matematika/logaritmy/vetyologaritmech'
+          },{
+            label: "Logaritmování",
+            link: "matematika/logaritmy/logaritmovani"
           }, {
             label: "Příklady",
             items: [{
