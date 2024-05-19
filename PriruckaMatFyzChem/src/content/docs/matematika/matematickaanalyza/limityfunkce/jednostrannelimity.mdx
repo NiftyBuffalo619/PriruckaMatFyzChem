@@ -1,0 +1,83 @@
+---
+title: Jednostranné limity
+---
+import Latex from "../../../../../components/Latex.astro";
+
+Jednostranné limity jsou důležitým konceptem v matematické analýze, který nám umožňuje studovat chování funkcí v blízkosti určitého bodu z jedné strany – buď zleva nebo zprava.
+
+### Definice jednostranných limit
+
+**Levostranná limita** (limita zleva):
+Levostranná limita funkce $$f(x)$$ v bodě $$a$$ se označuje jako $$\lim\limits_{x \to a^-} f(x)$$ a definuje se jako hodnota, ke které se $$f(x)$$ blíží, když $$x$$ přistupuje k $$a$$ zleva (tj. pro $$x < a$$).
+
+Formálně:
+$$ \lim\limits_{x \to a^-} f(x) = L $$
+pokud pro každé $$\epsilon > 0$$ existuje $$\delta > 0$$ takové, že když $$a - \delta < x < a$$, pak $$|f(x) - L| < \epsilon$$.
+
+**Pravostranná limita** (limita zprava):
+Pravostranná limita funkce $$f(x)$$ v bodě $$a$$ se označuje jako $$\lim\limits_{x \to a^+} f(x)$$ a definuje se jako hodnota, ke které se $$f(x)$$ blíží, když $$x$$ přistupuje k $$a$$ zprava (tj. pro $$x > a$$).
+
+Formálně:
+$$ \lim\limits_{x \to a^+} f(x) = L $$
+pokud pro každé $$\epsilon > 0$$ existuje $$\delta > 0$$ takové, že když $$a < x < a + \delta$$, pak $$|f(x) - L| < \epsilon$$.
+
+### Vztah mezi jednostrannými a oboustrannými limitami
+
+Oboustranná limita funkce $$f(x)$$ v bodě $$a$$ existuje, pokud a jen pokud existují obě jednostranné limity a jsou si rovny.
+
+Formálně:
+$$ \lim\limits_{x \to a} f(x) = L $$
+pokud a jen pokud
+$$ \lim\limits_{x \to a^-} f(x) = L $$
+a
+$$ \lim\limits_{x \to a^+} f(x) = L $$
+
+### Vlastnosti jednostranných limit
+
+Jednostranné limity mají podobné vlastnosti jako oboustranné limity, včetně následujících:
+
+1. **Linearita**:
+   Pokud $$\lim\limits_{x \to a^-} f(x) = L$$ a $$\lim\limits_{x \to a^-} g(x) = M$$, pak:
+   <Latex formula="\lim\limits_{x \to a^-} [f(x) + g(x)] = L + M" />
+   a
+   <Latex formula="\lim\limits_{x \to a^-} [f(x) - g(x)] = L - M" />
+
+2. **Součin a podíl**:
+   Pokud $$\lim\limits_{x \to a^-} f(x) = L$$ a $$\lim\limits_{x \to a^-} g(x) = M$$, pak:
+   <Latex formula="\lim\limits_{x \to a^-} [f(x) \cdot g(x)] = L \cdot M" />
+   Pokud navíc $$M \neq 0$$, pak:
+   <Latex formula="\displaystyle \lim\limits_{x \to a^-} \left( \frac{f(x)}{g(x)} \right) = \frac{L}{M}" />
+
+3. **Spojitost**:
+   Funkce $$f(x)$$ je v bodě $$a$$ spojitá, pokud platí:
+   <Latex formula="\lim\limits_{x \to a^-} f(x) = \lim\limits_{x \to a^+} f(x) = f(a)" />
+
+### Aplikace jednostranných limit
+
+Jednostranné limity se často používají při analýze funkcí v následujících situacích:
+
+1. **Diskontinuity**:
+   Studium bodů nespojitosti, kde funkce může mít různou hodnotu při přístupu zleva a zprava.
+
+2. **Derivace**:
+   Definice derivace v bodě zahrnuje limitu, což může zahrnovat i jednostranné limity, pokud funkce mění své chování asymetricky kolem bodu.
+
+3. **Asymptotické chování**:
+   Zkoumání chování funkcí v blízkosti hranic jejich definičních oborů.
+
+4. **Řešení rovnic a nerovnic**:
+   Použití jednostranných limit při zkoumání bodů, kde funkce mění svůj směr nebo kde se vyskytují asymptoty.
+
+### Příklady
+
+1. **Jednostranné limity absolutní hodnoty**:
+   $$ f(x) = |x| $$
+   $$ \lim\limits_{x \to 0^-} |x| = 0 \quad \text{a} \quad \lim\limits_{x \to 0^+} |x| = 0 $$
+
+2. **Jednostranné limity skokové funkce**:
+   <Latex formula=" f(x) = \begin{cases} 1, &\text{pokud } x \geq 0 \\-1, &\text{pokud } x < 0\end{cases} " />
+   <Latex formula=" \lim\limits_{x \to 0^-} f(x) = -1 \quad \text{a} \quad \lim\limits_{x \to 0^+} f(x) = 1 " />
+
+3. **Jednostranné limity exponenciální funkce**:
+   <Latex formula="f(x) = e^x" />
+   <Latex formula=" \lim\limits_{x \to -\infty} e^x = 0 \quad \text{a} \quad \lim\limits_{x \to \infty} e^x = \infty " />

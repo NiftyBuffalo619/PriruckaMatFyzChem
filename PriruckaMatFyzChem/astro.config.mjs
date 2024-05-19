@@ -317,6 +317,9 @@ export default defineConfig({
         },{
           label: "Limity Funkce",
           items: [{
+            label: "Jednostranné limity",
+            link: "matematika/matematickaanalyza/limityfunkce/jednostrannelimity"
+          },{
             label: "Věty o Limitách Funkce",
             link: "matematika/matematickaanalyza/limityfunkce/vetyolimitachfunkce"
           },{
