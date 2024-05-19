@@ -266,7 +266,7 @@ export default defineConfig({
             link: "matematika/matematickaanalyza/posloupnosti/geometrickaposloupnost"
           }]
         }, {
-          label: "Limity",
+          label: "Limity Posloupnosti",
           items: [{
             label: "Úvod",
             link: "matematika/matematickaanalyza/limity/uvod"
@@ -301,10 +301,7 @@ export default defineConfig({
             label: "Limity s faktoriály",
             link: "matematika/matematickaanalyza/limity/limitysfaktorialy"
           },{
-            label: "Speciální limity",
-            link: "matematika/matematickaanalyza/limity/specialnilimity"
-          },{
-            label: "Věty o Limitách",
+            label: "Věty o Limitách Posloupnosti",
             link: "matematika/matematickaanalyza/limity/vetyolimitach"
           }, {
             label: "Příklady",
@@ -316,6 +313,15 @@ export default defineConfig({
                 "variant": "success"
               }
             }]
+          }]
+        },{
+          label: "Limity Funkce",
+          items: [{
+            label: "Věty o Limitách Funkce",
+            link: "matematika/matematickaanalyza/limityfunkce/vetyolimitachfunkce"
+          },{
+            label: "Speciální limity",
+            link: "matematika/matematickaanalyza/limity/specialnilimity"
           }]
         },{
           label: "Diferenciální počet",

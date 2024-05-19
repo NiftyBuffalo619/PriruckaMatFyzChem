@@ -1,7 +1,20 @@
 ---
-title: Věty o Limitách
+title: Věty o Limitách Posloupnosti
 ---
 
 import Latex from "../../../../../components/Latex.astro";
 
 <Latex formula="\lim\limits_{x \to \infty} f(x)" />
+
+### Věta o limitě součtu
+Pokud $$\lim\limits_{x \to \infty} a_n = A$$ a $$\lim\limits_{x \to \infty} b_n = B$$, pak platí:
+<Latex formula="\lim\limits_{x \to \infty} a_n + b_n = A + B" />
+### Věta o limitě součinu 
+Pokud $$\lim\limits_{x \to \infty} a_n = A$$ a $$\lim\limits_{x \to \infty} b_n = B$$, pak platí:
+<Latex formula="\lim\limits_{x \to \infty} a_n \cdot b_n = A \cdot B" />
+### Věta o limitě podílu
+Pokud $$\lim\limits_{x \to \infty} a_n = A$$ a $$\lim\limits_{x \to \infty} b_n = B$$, kde $$B \neq 0$$, pak platí:
+<Latex formula="\displaystyle \lim\limits_{x \to \infty} \frac{a_n}{b_n} = \frac{A}{B}" />  
+### Věta o limitě mocniny
+Pokud $$\lim\limits_{x \to \infty} a_n = A$$ a $$p$$ je libovolné reálné číslo, pak platí:
+<Latex formula="\lim\limits_{x \to \infty} (a_n)^p = A^p" />
