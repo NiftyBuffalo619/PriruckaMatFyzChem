@@ -1,0 +1,31 @@
+---
+title: L'Hopitalovo pravidlo
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Výpočet některých limit funkcí je výrazně usnadněn pomocí l'Hospitalových pravidel. Hlavními situacemi,
+kdy se l'Hospitalova pravidla používají, jsou limity,
+které mají tvar $$\displaystyle \frac{0}{0}$$ nebo $$\displaystyle \frac{\infty}{\infty}$$. Základní myšlenka l'Hospitalových pravidel spočívá v tom,
+že za určitých okolností můžeme limitu podílu dvou funkcí vyjádřit jako limitu podílu jejich derivací.
+
+
+
+### L'Hopitalovo pravidlo 1
+Nechť $$\displaystyle \lim\limits_{x \to a} f(x) = \lim\limits_{x \to a} g(x) = 0$$ kde $$a \in \Reals \cup \{ \pm \infty \}$$
+
+Nechť existuje také vlastní nebo nevlastní limita $$\displaystyle \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}$$
+Potom také existuje $$\displaystyle \displaystyle \lim\limits_{x \to a} \frac{f(x)}{g(x)}$$ a platí
+<center><Latex formula="\displaystyle \lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}" /></center>
+
+### L'Hopitalovo pravidlo 2
+Nechť $$\displaystyle \lim\limits_{x \to a} | g(x) | = \infty $$ kde $$a \in \Reals$$ 
+Nechť existuje také vlastní či nevlastní limita $$\displaystyle \displaystyle \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}$$
+
+Potom rovněž existuje limita $$\displaystyle \displaystyle \lim\limits_{x \to a} \frac{f(x)}{g(x)}$$ a platí jako v předchozím případě
+<center><Latex formula="\displaystyle \lim\limits_{x \to a} \frac{f(x)}{g(x)} = \lim\limits_{x \to a} \frac{f'(x)}{g'(x)}" /></center>
+
+### Poznámky 
+Kde o limitě $$\lim\limits_{x \to a} f(x)$$ nic nepředpokládáme, dokonce ani její existenci Všechny tyto pravidla platí pro limita v bodě $$a$$ zleva zprava i pro limitu
+v nevlastních bodech. Pokud při použití dostaneme opět neurčitý výraz type $$\displaystyle \frac{0}{0}$$ nebo $$\displaystyle \frac{\infty}{\infty}$$. Derivujeme obě funkce 
+jak v čitateli tak ve jmenovateli zvlášť.
