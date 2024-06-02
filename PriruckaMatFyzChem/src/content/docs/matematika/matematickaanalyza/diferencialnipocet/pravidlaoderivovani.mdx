@@ -1,0 +1,20 @@
+---
+title: Pravidla o derivování
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Zde jsou vypsány pravidla o derivování více jsou rozebrány v dalších částích postupně zvlášť 
+
+### Derivace součtu a rozdílu
+<Latex formula="\big( f(x) \pm g(x) \big)' = f'(x) \pm g'(x) " />
+
+### Derivace součinu a podílu
+
+<Latex formula="\big( f(x) \cdot g(x) \big)' = f'(x) \cdot g(x) + f(x) \cdot g'(x)" />
+
+### Derivace složené funkce
+Má-li funkce $$u = g(x)$$ **vlastní derivaci** na intervalu $$(a, b)$$ a funkce $$y = f(u)$$ 
+<Latex formula="[f(g(x))]' = f'(g(x)) \cdot g'(x)" />
+pro více funkcí
+<Latex formula="\Big( f \big( g ( h(x) ) \big) \Big)' = f' \big( g(h(x))\big) \cdot g'(h(x)) \cdot h'(x)" />

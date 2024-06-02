@@ -334,6 +334,9 @@ export default defineConfig({
           },{
             label: "Geometrický význam derivace",
             link: "matematika/matematickaanalyza/diferencialnipocet/geometrickyvyznamderivace"
+          },{
+            label: "Pravidla o derivování",
+            link: "matematika/matematickaanalyza/diferencialnipocet/pravidlaoderivovani"
           }, {
             label: "Derivace součtu a rozdílu",
             link: "matematika/matematickaanalyza/diferencialnipocet/derivacesouctuarozdilu"
