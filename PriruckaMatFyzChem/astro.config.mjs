@@ -343,6 +343,9 @@ export default defineConfig({
           }, {
             label: "Derivace součinu a podílu",
             link: "matematika/matematickaanalyza/diferencialnipocet/derivacesoucinuapodilu"
+          },{
+            label: "Derivace složene funkce",
+            link: "matematika/matematickaanalyza/diferencialnipocet/derivaceslozenefunkce"
           }, {
             label: "L'Hopitalovo pravidlo",
             link: "matematika/matematickaanalyza/diferencialnipocet/lhopitalovopravidlo"

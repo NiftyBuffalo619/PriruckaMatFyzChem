@@ -1,0 +1,36 @@
+---
+title: Derivace složené funkce
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Pro derivaci složené funkce využijeme následující pravidla.
+<Latex formula="[f(g(x))]' = f'(g(x)) \cdot g'(x)" />
+<Latex formula="\Big( f \big( g ( h(x) ) \big) \Big)' = f' \big( g(h(x))\big) \cdot g'(h(x)) \cdot h'(x)" />
+Pro derivování složených funkcí je nutné velmi dobře ovládat základní derivace a znát algebraické vztahy.
+
+
+
+### Příklady
+
+<Latex formula="(\sin 2x)'" />
+<details>
+<summary>Řešení</summary>
+<Latex formula="\underbrace{(\sin \underbrace{2x}_{g(x)})'}_{f(x)}" />
+<Latex formula="(\sin 2x)' = \cos 2x \cdot 2 = 2 \cos 2x" />
+</details>
+
+<Latex formula="(\sin^2 x \cos^2 x)'" />
+<details>
+<summary>Řešení</summary>
+<Latex formula="\displaystyle \frac{\mathrm{d}}{\mathrm{d}x}\sin^2 x \cos^2 x = (\sin^2 x)' \cos^2 x + \sin^2 x (\cos^2 x)'" />
+<Latex formula="({\red{\sin^{\blue{2}} x}})' \cos^2 x + \sin^2 x (\red{\cos^{\blue{2}} x})'" />
+Zde je nutno si uvědomit, že $$\sin^2 x$$ je také složená funkce a to ve funkci kvadratické (zaznačena modře) a v ní je vložena funkce $$\sin x$$ (červěně)
+<Latex formula="\blue{x^2} \Rrightarrow \red{\sin x}" />
+Dostáváme tedy
+<Latex formula="2 \sin x \cos x \cdot \cos^2 x + \sin^2 x (-2 \cos x \sin x)" />
+<Latex formula="2 \sin x \cos^3 x -2 \sin^3 x \cos x" />
+A nyní už jenom vytkneme, abychom mohli daný výraz přepsat a goniometrické vztahy
+<Latex formula="2 \sin x \cos x ( \cos^2 x - \sin^2 x)" />
+<Latex formula="\sin 2x \cos 2x" />
+</details>
