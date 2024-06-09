@@ -1,0 +1,33 @@
+---
+title: Kvadratické rovnice s absolutní hodnotou
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+<center><Latex formula="(x^2 + 5x + 6)(x^2 - 4x + 2) \le 0" /></center>
+Nejprve rozložíme kvadratické dvojčleny a najdeme jejich kořeny:
+
+
+1.
+<center><Latex formula="x^2 + 5x + 6 = 0" /></center>
+<center><Latex formula="(x + 2)(x + 3) \implies x_1 = -2 , x_2 = -3" /></center>
+2.
+<center><Latex formula="x^2 - 4x + 2 = 0" /></center>
+<center><Latex formula="(x - 1)(x - 3) \implies x_1 = 1 , x_2 = 3" /></center>
+Máme tedy následující kořeny: $$-3,-2,1,3$$
+
+### Řešení pomocí rozkladu na linearní členy pomocí tabulky
+Nerovnici můžeme přepsat jako:
+<center><Latex formula="(x + 2)(x + 3)(x - 1)(x - 3) \le 0" /></center>
+Vytvoříme tabulku pro intervaly určené kořeny (V intervalech kde je člen záporný je $$-$$ naopak v intervalech kde je člen kladný $$+$$):
+
+
+| --- | <Latex formula="(-\infty, -3)" /> | <Latex formula="(-3, -2)" /> | <Latex formula="(-2, 1)" /> | <Latex formula="(1, 3)" /> | <Latex formula="(3, \infty)" /> |
+| --- |-----------------------------------|------------------------------|-----------------------------|----------------------------|--------------------------------|
+| <Latex formula="(x + 3)" /> |    -   | +                           | +                           | +                          | +                              |
+| <Latex formula="(x + 2)" /> |    -   | -                            | +                           | +                          | +                              |
+| <Latex formula="(x - 1)" /> |    -  | -                            | -                           | +                          | +                              |
+| <Latex formula="(x - 3)" /> |    -  | -                            | -                           | -                          | +                              |
+| Výsledek |                       +   | -                            | +                           | -                          | +                              |
+
+Řešením je tedy $$x \in (-3, -2) \cup (1, 3)$$

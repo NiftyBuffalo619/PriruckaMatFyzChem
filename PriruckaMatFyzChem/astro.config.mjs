@@ -155,6 +155,9 @@ export default defineConfig({
           }, {
             label: "Odvození vzorce",
             link: "matematika/algebra/kvadratickerovnice/odvozenivzorce"
+          }, {
+            label: "Kvadratické rovnice s absolutní hodnotou",
+            link: "matematika/algebra/kvadratickerovnice/kvadratickerovnicesabsolutnihodnotou"
           }]
         },{
           label: "Iracionální rovnice a nerovnice",
