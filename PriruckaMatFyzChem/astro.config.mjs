@@ -157,6 +157,12 @@ export default defineConfig({
             link: "matematika/algebra/kvadratickerovnice/odvozenivzorce"
           }]
         },{
+          label: "Iracionální rovnice a nerovnice",
+          items: [{
+            label: "Iracionální rovnice",
+            link: "matematika/algebra/iracionalnirovnicenerovnice/iracionalnirovnice"
+          }]
+        },{
           label: "Logaritmy",
           items: [{
               label: 'Úvod',

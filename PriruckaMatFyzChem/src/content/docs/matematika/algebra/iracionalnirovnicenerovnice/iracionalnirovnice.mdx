@@ -1,0 +1,93 @@
+---
+title: Iracionální rovnice
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Iracionální rovnice jsou rovnice obsahující jednu nebo více neznámých pod odmocninou.
+
+### Proč umocňování není ekvivaletní úprava
+Umocňování není ekvivalentní úprava, protože může přidat špatná řešení do rovnice.
+Příklad
+<Latex formula="\sqrt{x} = -3" />
+<Latex formula="(\sqrt{x})^2 = (-3)^2" />
+<Latex formula="(\sqrt{x})^2 = (-3)^2" />
+<Latex formula="x = \varnothing" />
+Když umocníme obě strany rovnice dostaneme, že $$x = 9$$ což je nesmysl, proto $$x \in \varnothing$$ nemá řešení. Je proto podmínkou vždy udělat zkoušku.
+
+
+### Příklady
+
+<Latex formula="3 \sqrt{2x -1} = 4" />
+
+<details>
+    <summary>Řešení</summary>
+    <Latex formula="3 \sqrt{2x -1} = 4 /^2" />
+    <Latex formula="9 (2x - 1) = 16" />
+    <Latex formula="18x - 9 = 16" />
+    <Latex formula="18x = 25" />
+    <Latex formula="\displaystyle x = \frac{25}{18}" />
+
+    Provedeme zkoušku
+
+    <Latex formula="3 \sqrt{2 \frac{25}{18} - 1} = 4" />
+    <Latex formula="3 \sqrt{\cancel{2} \frac{25}{\cancel{18}} - 1} = 4" />
+    <Latex formula="3 \sqrt{\frac{25}{9} - 1} = 4" />
+    <Latex formula="3 \sqrt{\frac{25 - 9}{9} - 1} = 4" />
+    <Latex formula="3 \sqrt{\frac{16}{9}} = 4" />
+    <Latex formula="3 \frac{4}{3} = 4" />
+    <Latex formula="\cancel{3} \frac{4}{\cancel{3}} = 4" />
+    <Latex formula="4 = 4" />
+    Zkouška platí řešením je $$\displaystyle x = \frac{25}{18}$$
+</details>
+
+---
+
+<Latex formula="\displaystyle \sqrt{z + \frac{1}{2}} = \sqrt{z - \frac{1}{2}}" />
+<details>
+    <summary>Řešení</summary>
+    <Latex formula="\displaystyle \left(\sqrt{z + \frac{1}{2}}\right)^2 = \left(\sqrt{z - \frac{1}{2}}\right)^2" />
+    <Latex formula="\displaystyle z + \frac{1}{2} = z - \frac{1}{2}" />
+    <Latex formula="\displaystyle \frac{1}{2} \neq - \frac{1}{2}" />
+    Řešení této rovnice není možné, protože $$\frac{1}{2} \neq -\frac{1}{2}$$. Proto rovnice nemá žádné řešení.
+</details>
+---
+
+<Latex formula="\displaystyle - \sqrt{3u + 5} = \sqrt{3u + 5}" />
+<details>
+    <summary>Řešení</summary>
+    <Latex formula="- \sqrt{3u + 5} = \sqrt{3u + 5}" />
+    <Latex formula="- \sqrt{3u + 5} - \sqrt{3u + 5} = 0" />
+    <Latex formula="-2 \sqrt{3u + 5} = 0" />
+    <Latex formula="\sqrt{3u + 5} = 0" />
+    <Latex formula="3u + 5 = 0" />
+    <Latex formula="3u = -5" />
+    <Latex formula="\displaystyle u = -\frac{5}{3}" />
+    Provedeme zkoušku
+
+<Latex formula="- \sqrt{3 \cdot -\frac{5}{3} + 5} = \sqrt{3 \cdot -\frac{5}{3} + 5}" />
+<Latex formula="- \sqrt{-5 + 5} = \sqrt{-5 + 5}" />
+<Latex formula="- \sqrt{0} = \sqrt{0}" />
+<Latex formula="0 = 0" />
+
+Zkouška platí, řešením je $$\displaystyle u = -\frac{5}{3}$$
+</details>
+
+---
+
+<Latex formula="\displaystyle \sqrt{u^2 + u + 1} = \sqrt{2u^2 + 8}" />
+<details>
+    <summary>Řešení</summary>
+    <Latex formula="\sqrt{u^2 + u + 1} = \sqrt{2u^2 + 8} /^2" />
+    <Latex formula="u^2 + u + 1 = 2u^2 + 8" />
+    <Latex formula="u^2 + u + 1 - 2u^2 - 8 = 0" />
+    <Latex formula="-u^2 + u - 7 = 0" />
+    <Latex formula="u^2 - u + 7 = 0" />
+Řešíme kvadratickou rovnici:
+<Latex formula="u^2 - u + 7 = 0" />
+<Latex formula="D = b^2 - 4ac" />
+<Latex formula="D = 1 - 28" />
+<Latex formula="D = - 27" />
+<Latex formula="u \notin \Reals" />
+Vidíme, že kvadratická rovnice nemá žádné realné řešení.
+</details>
