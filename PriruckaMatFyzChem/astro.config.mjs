@@ -359,6 +359,12 @@ export default defineConfig({
             label: "L'Hopitalovo pravidlo",
             link: "matematika/matematickaanalyza/diferencialnipocet/lhopitalovopravidlo"
           }]
+        },{
+          label: "Integrální počet",
+          items: [{
+            label: "Pravidla integrací",
+            link: "matematika/matematickaanalyza/integralnipocet/pravidlaintegrace"
+          }]
         }, {
           label: "Nekonečné řady",
           items: [{

@@ -1,0 +1,41 @@
+---
+title: Základní pravidla integrace
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+### Úvod
+Integrální počet je klíčová oblast matematiky, která se zabývá integrací a jejími aplikacemi.
+Spolu s diferenciálním počtem tvoří základní pilíř kalkulu.
+Hlavní myšlenkou integrálního počtu je nalezení hodnoty určité funkce na daném intervalu, což může zahrnovat vypočítávání plochy pod křivkou, délky křivky nebo objemu tělesa.
+
+### Základní pravidla
+<Latex formula="\displaystyle \int c f(x) \space \mathrm{d}x = c \int f(x) \space \mathrm{d}x" /> kde $$c$$ je realná konstanta
+<Latex formula="\displaystyle \int (f(x) \pm g(x)) \space \mathrm{d}x = \int f(x) \space \mathrm{d}x \pm \int g(x) \space \mathrm{d}x" />
+
+### Základní vzorce
+<Latex formula="\displaystyle \int 0 \space \mathrm{d}x = c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int \space \mathrm{d}x = x + c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int x^{n} \space \mathrm{d}x = \frac{x^{n + 1}}{n + 1} + c, \forall x \in (0; \infty); n \in \Reals \setminus \{ -1 \}; c \in \Reals" />
+<Latex formula="\displaystyle \int \frac{\mathrm{d}x}{x} \space = \int \frac{1}{x} \space \mathrm{d}x = \ln | x | + c, \forall x \in \Reals \setminus \{ 0 \}, c \in \Reals" />
+<Latex formula="\displaystyle \int e^x \space \mathrm{d}x = e^x + c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int a^x \space \mathrm{d}x = \frac{a^x}{\ln a} + c, \forall x \in \Reals;a > 0, a \neq 1; c \in \Reals" />
+<Latex formula="\displaystyle \int \sin x \space \mathrm{d}x = - \cos x + c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int \cos x \space \mathrm{d}x = \sin x + c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int \frac{\mathrm{d}x}{\cos^2 x} \space  = \displaystyle \int \frac{1}{\cos^2 x} \mathrm{d}x \space = \tg x + c, \forall x \in \Reals \setminus \biggl\{ \frac{(2k + 1)\pi}{2} | k \in \Z \biggl\}; c \in \Reals" />
+<Latex formula="\displaystyle \int \frac{\mathrm{d}x}{\sin^2 x} \space  = \displaystyle \int \frac{1}{\sin^2 x} \mathrm{d}x \space = - \cotg x + c, \forall x \in \Reals \setminus \biggl\{ k \pi | k \in \Z \biggl\}; c \in \Reals" />
+<Latex formula="\displaystyle \int \frac{\mathrm{d}x}{1 + x^2} \space  = \displaystyle \int \frac{1}{1 + x^2} \mathrm{d}x \space = \arctg x + c, \forall x \in \Reals; c \in \Reals" />
+<Latex formula="\displaystyle \int \frac{\mathrm{d}x}{\sqrt{1 - x^2}} \space  = \displaystyle \int \frac{1}{\sqrt{1 - x^2}} \mathrm{d}x \space = \arcsin x + c, \forall x \in (-1; 1); c \in \Reals" />
+
+
+
+
+<Latex formula="\displaystyle \int 0 \space \mathrm{d}x = , \forall x \in \Reals; c \in \Reals" />
+
+### Pravidlo metody integrace per partes
+<Latex formula="\displaystyle \int u(x) v'(x) \space \mathrm{d}x = u(x) v(x) - \int u'(x) v(x) \space \mathrm{d}x" />
+Také známé jako
+<Latex formula="\displaystyle \int u v' \space \mathrm{d}x = uv - \int u'v \space \mathrm{d}x" /> kde $$u = f(x)$$ a $$v = g(x)$$
+
+### Pravidlo metody substituce
+<Latex formula="\displaystyle \int f(φ(x)) φ ' (x) \space \mathrm{d}x = \int f(t) \space \mathrm{d}t" /> kde $$t = φ(x)$$
