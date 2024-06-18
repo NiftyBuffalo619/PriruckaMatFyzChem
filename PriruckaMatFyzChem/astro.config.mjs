@@ -364,6 +364,12 @@ export default defineConfig({
           items: [{
             label: "Pravidla integrací",
             link: "matematika/matematickaanalyza/integralnipocet/pravidlaintegrace"
+          }, {
+            label: "Metoda per partes",
+            items: [{
+              label: "Metoda per partes",
+              link: "matematika/matematickaanalyza/integralnipocet/metodaperpartes"
+            }]
           }]
         }, {
           label: "Nekonečné řady",

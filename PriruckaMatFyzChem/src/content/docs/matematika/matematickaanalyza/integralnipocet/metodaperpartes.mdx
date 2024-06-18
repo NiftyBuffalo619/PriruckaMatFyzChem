@@ -1,0 +1,38 @@
+---
+title: Metoda per partes
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Metoda per partes je obdobou pravidla pro derivaci součinu, které se používá při integraci součinu dvou funkcí.
+
+### Odvození 
+Metoda per partes vychází z derivace součinu.
+<center><Latex formula="\big( u(x)v(x) \big)' = u'(x)v(x) + u(x)v'(x)" /></center>
+Naintegrujeme obě strany
+
+<center><Latex formula="\displaystyle \int \big( u(x)v(x) \big)' \mathrm{d}x = \int u'(x)v(x) + u(x)v'(x) \mathrm{d}x" /></center>
+<center><Latex formula="\displaystyle \int \big( u(x)v(x) \big)' \mathrm{d}x = \int u'(x)v(x) \mathrm{d}x + \int u(x)v'(x) \mathrm{d}x" /></center>
+Integrace je opačná operace od derivace
+<center><Latex formula="\displaystyle u(x)v(x) = \int u'(x)v(x) \mathrm{d}x + \int u(x)v'(x) \mathrm{d}x" /></center>
+Přehodíme $$\int u'v \mathrm{d}x$$ na druhou stranu
+<center><Latex formula="\displaystyle u(x)v(x) - \int u'(x)v(x) \mathrm{d}x = \int u(x)v'(x) \mathrm{d}x" /></center>
+<center><Latex formula="\displaystyle \int u(x)v'(x) \mathrm{d}x = u(x)v(x) - \int u'(x)v(x) \mathrm{d}x" /></center>
+Často bývá $$u(x)$$ a $$v(x)$$ substituovány $$u = u(x)$$ a $$v = v(x)$$
+<center><Latex formula="\displaystyle \int uv' \mathrm{d}x = uv - \int u'v \mathrm{d}x" /></center>
+Kde $$u$$ a $$v$$ jsou funkce proměnné $$x$$
+
+### Postup
+Vybereme za $$u$$ funkci, kterou umíme snadno derivovat a za $$v$$ funkci, která nejde snadno integrovat
+<center><Latex formula="\displaystyle \int x \cos x \mathrm{d}x = \bigg| \begin{aligned} u = x \rarr u' = 1 \space \space \\ v' = \cos x \rarr v = \sin x \end{aligned} \bigg|" /></center>
+Nyní dosadíme do daného vztahu za $$u$$ dosadíme $$x$$, za $$v$$ dosadíme $$\sin x$$. Hlavně je třeba neplést si $$u$$ a $$u'$$ apod. 
+<center><Latex formula="\displaystyle  x \sin x - \int 1 \cdot \sin x \mathrm{d}x" /></center>
+Nyní už jenom dopočítáme
+<center><Latex formula="\displaystyle  x \sin x - (- \cos x) + c = x \sin x + \cos x + c, x \in \Reals , c \in \Reals" /></center>
+
+---
+
+<Latex formula="\displaystyle \int \ln x \space \mathrm{d}x" />
+Ačkoliv se zdá, že zde není žádný součin tak zde je součin jenom si stačí uvědomit, že celý integrál můžeme přepsat jako
+<Latex formula="\displaystyle \int 1 \cdot \ln x \space \mathrm{d}x" />
+<Latex formula="\displaystyle \int 1 \cdot \ln x \space \mathrm{d}x = \bigg| \begin{aligned} u = \ln x \rarr u' = \frac{1}{x} \\ v' = 1 \rarr v = x \end{aligned} \bigg| = \newline x \ln x - \int x \frac{1}{x} \mathrm{d}x = x \ln x - \int 1 \mathrm{d}x = \newline x \ln x - x + c = x (\ln x - 1) + c , x \in (0, \infty), c \in \Reals" />
