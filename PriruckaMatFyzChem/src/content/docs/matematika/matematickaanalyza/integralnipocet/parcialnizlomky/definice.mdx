@@ -1,0 +1,26 @@
+---
+title: Věta o rozklad na parciální zlomky
+---
+
+import Latex from "../../../../../../components/Latex.astro";
+
+Rozklad na parciální zlomky je metoda, kterou používáme k integraci racionálních funkcí, tedy podílů dvou polynomů.
+Tato metoda nám umožňuje složitější lomené funkce rozložit na jednodušší parciální zlomky, které lze snadněji integrovat.
+Podívejme se podrobněji na toto tvrzení a příklad.
+
+### Věta o rozkladu na parciální zlomky
+Nechť p(x) a q(x) jsou reálné polynomy, kde stupeň p(x) je menší než stupeň q(x). Předpokládejme, že q(x) lze rozložit na faktory:
+<center><Latex formula="\displaystyle q(x) = a \prod_{n = 1}^{N} (x - a_n)^{r_n} \prod_{m = 1}^{M} (x^2 + b_m x + c_m)^{t_m} =" /></center>
+<center><Latex formula="\displaystyle q(x) = (x - a_1)^{r_1} (x - a_2)^{r_2} \cdots (x - a_k)^{r_N} \cdot \\\ (x^2 + b_1 x + c_1)^{t_1} (x^2 + b_2 x + c_2)^{t_2} \cdots (x^2 + b_M x + c_M)^{t_M}" /></center>
+kde $$(x - a_n)$$ jsou lineární faktory a $$(x^2 + b_m x + c_m)$$  jsou kvadratické faktory, které jsou ireducibilní (nemají reálné kořeny).
+Pak můžeme $$\displaystyle \frac{p(x)}{q(x)}$$ rozložit na **parciální zlomky**
+<center><Latex formula="\displaystyle \frac{p(x)}{q(x)} = \sum_{n = 1}^{N} \sum_{i = 1}^{r_n} \frac{A_{n,i}}{(x - a_n)^{i}} + \sum_{m = 1}^{M} \sum_{j = 1}^{t_m} \frac{B_{m,j} x + C_{m,j}}{(x^2 + b_m x + c_m)^j} =" /></center>
+<center><Latex formula="\displaystyle \frac{A_{1,1}}{(x - a_1)} + \frac{A_{1,2}}{(x - a_1)^2} + \cdots + \frac{A_{1,r_1}}{(x - a_1)^{r_1}} \\\ + \frac{A_{2,1}}{(x - a_2)} + \frac{A_{2,r_2}}{(x - a_2)^{r_2}} + \cdots \frac{A_{N,1}}{(x - a_N)} + \cdots \\\ + \frac{A_{N,r_N}}{(x - a_N)^{r_N}} \\\ + \frac{B_{1,1} x + C_{1,1}}{(x^2 + b_1 x + c_1)} + \frac{B_{1,2} x + C_{1,2}}{(x^2 + b_1 x + c_1)^2} + \cdots  \\\ + \frac{B_{1,t_1} x + C_{1,t_1}}{(x^2 + b_1 x + c_1)^{t_1}} + \cdots + \frac{B_{M,1} x + C_{M,1}}{(x^2 + b_M x + c_M)} + \cdots \\\ + \frac{B_{M,t_M} x + C_{M,t_M}}{(x^2 + b_M x + c_M)^{t_M}}" /></center>
+kde všechny konstanty $$A,B,C$$ jsou jednoznacně určeny.
+
+### Co nám to říká 
+Když máme racionální funkci $$\displaystyle \frac{p(x)}{q(x)}$$ s polynomy $$p(x)$$ a $$q(x)$$ tak, že stupeň $$p(x)$$ je menší než stupeň $$q(x)$$, můžeme tuto funkci rozložit na jednodušší parciální zlomky.
+- **Linearní faktory**: Pro každý liearní faktor $$(x - a_n)^i$$ ve jmenovateli dostaneme parciální zlomky
+<center><Latex formula="\displaystyle \frac{A_1}{(x - a)} , \frac{A_2}{(x - a)^2}, \cdots , \frac{A_n}{(x - a)^n}" /></center>
+- **Kvadratické faktory** Pro každý ireducibilní kvadratický faktor $$(x^2 + bx + c)^n$$ ve jmenovateli dostaneme parciální zlomky:
+<center><Latex formula="\displaystyle \frac{B_1 x + C_1}{(x^2 + bx + c)} , \frac{B_2 x + C_2}{(x^2 + bx + c)^2}, \cdots , \frac{B_n x + C_n}{(x^2 + bx + c)^n}" /></center>

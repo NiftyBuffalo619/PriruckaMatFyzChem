@@ -370,6 +370,12 @@ export default defineConfig({
               label: "Metoda per partes",
               link: "matematika/matematickaanalyza/integralnipocet/metodaperpartes"
             }]
+          }, {
+            label: "Parciální zlomky",
+            items: [{
+              label: "Definice",
+              link: "matematika/matematickaanalyza/integralnipocet/parcialnizlomky/definice"
+            }]
           }]
         }, {
           label: "Nekonečné řady",
