@@ -24,3 +24,31 @@ Když máme racionální funkci $$\displaystyle \frac{p(x)}{q(x)}$$ s polynomy $
 <center><Latex formula="\displaystyle \frac{A_1}{(x - a)} , \frac{A_2}{(x - a)^2}, \cdots , \frac{A_n}{(x - a)^n}" /></center>
 - **Kvadratické faktory** Pro každý ireducibilní kvadratický faktor $$(x^2 + bx + c)^n$$ ve jmenovateli dostaneme parciální zlomky:
 <center><Latex formula="\displaystyle \frac{B_1 x + C_1}{(x^2 + bx + c)} , \frac{B_2 x + C_2}{(x^2 + bx + c)^2}, \cdots , \frac{B_n x + C_n}{(x^2 + bx + c)^n}" /></center>
+
+### Příklad a aplikace 
+Mějme integrál 
+<Latex formula="\displaystyle \int \frac{x + 5}{x^2 - 2x - 3} \mathrm{d}x" /> 
+Abychom vyřešili tento integrál musíme rozložit daný polynom na parciální zlomky.
+
+- **Indentifikace faktorů** Ve jmenovateli máme faktory $$(x - 3)$$ a $$(x + 1)$$
+- **Předpoklad rozkladu** Rozložíme dle definice <center><Latex formula="\frac{x + 5}{(x - 3)(x + 1)} = \frac{A}{x - 3} + \frac{B}{x + 1}" /></center>
+- **Hleadní koeficientů** $$A,B,C$$  Vynásobíme obě strany rovnice jmenovatelem $$(x - 3)(x + 1)$$ a dostáváme 
+<center><Latex formula="x + 5 = A(x + 1) + B(x - 3)" /></center>
+Rozvineme pravou stranu a srovnáme koeficienty a vytkneme:
+<center><Latex formula="x + 5 = x (A + B) + (A - 3B)" /></center>
+Srovnáním koeficientů ($$x$$ má koeficient $$1$$ a na druhé straně $$(A + B)$$ srovnáme tedy pro všechny, pokud tam není žadný člen $$x^n$$ můžeme napsat $$0x^n$$) dostaneme soustavu rovnic:
+<center><Latex formula="\begin{cases} A + B = 1 \\ A - 3B = 5 \end{cases}" /></center>
+Vyřešením dostaneme $$A = 2, B = -1$$ dosadíme a máme finální rozklad
+<center><Latex formula="\displaystyle \frac{x + 5}{(x - 3)(x + 1)} = \frac{2}{x - 3} - \frac{1}{x + 1}" /></center>
+
+Integrál tedy můžeme přepsat na
+
+<center><Latex formula="\displaystyle \int \frac{x + 5}{x^2 - 2x - 3} \mathrm{d}x = \displaystyle \int \frac{2}{x - 3} - \frac{1}{x + 1} \mathrm{d}x" /></center>
+Použijeme vlastnosti integrálu
+<center><Latex formula="\displaystyle \int \frac{2}{x - 3} \mathrm{d}x  - \int \frac{1}{x + 1} \mathrm{d}x" /></center>
+Použijeme substituc pro první integrál $$t = x - 3$$
+<center><Latex formula="\displaystyle \int \frac{2}{t} \mathrm{d}t = 2 \int \frac{1}{t} \mathrm{d}t = 2 \ln ( |t| ) = 2 \ln (x - 3)" /></center>
+Použijeme substituci pro druhý integrál $$t = x + 1$$ 
+<center><Latex formula="\displaystyle - \int \frac{1}{t} \mathrm{d}t = - \ln ( |t| ) = 2 \ln ( | x + 1 | )" /></center>
+Výsledkem tedy je 
+<center><Latex formula="\displaystyle \int \frac{x + 5}{x^2 - 2x - 3} \mathrm{d}x = - \ln ( | x + 1 | ) + 2 \ln ( | x - 3 | ) + c ,  \\\ c \in \Reals" /></center>
