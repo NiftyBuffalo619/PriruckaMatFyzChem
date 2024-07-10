@@ -250,6 +250,9 @@ export default defineConfig({
         }, {
           label: "Permutace s opakováním",
           link: "matematika/kombinatorika/permutacesopakovanim"
+        }, {
+          label: "Binomická věta",
+          link: "matematika/kombinatorika/binomickaveta"
         }]
       },{
         label: "Matematická Analýza",

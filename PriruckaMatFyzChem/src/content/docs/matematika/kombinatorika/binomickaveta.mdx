@@ -1,0 +1,48 @@
+---
+title: Binomická věta
+---
+
+import Latex from "../../../../components/Latex.astro";
+
+Binomická věta nám říká, jak můžeme roznásobit výrazy ve tvaru $$(a + b)^n$$. Věta je následující
+<center><Latex formula="\displaystyle (a + b)^n = \sum_{k = 0}^n \binom{n}{k} a^{n - k} b^k" /></center>
+kde $$\binom{n}{k}$$ je binomický koeficient a je definován jako
+<center><Latex formula="\displaystyle \binom{n}{k} = \frac{n!}{k!(n - k)!}" /></center>
+### Důkaz Binomické věty
+Zvolíme si jakékoliv přirozené číslo například $$n = 3$$
+
+Roznásobíme si tedy jednotlivé prky
+<center><Latex formula="\displaystyle (a + b)(a + b)(a + b) = aaa + aab + aba + baa + abb + bab + bba + bbb" /></center>
+Každý ze sčítanců je uspořádaná trojice z prvků $$a$$ a $$b$$. Sečíst lze právě takové sčítance, které mají stejný počet prvků $$a$$ a stejný počet prvků $$b$$, tedy např. 
+$$aab+aba+baa$$.
+Počet trojic se dvěma prvky $$a$$ a jedním prvkem $$b$$ je
+<center><Latex formula="P'(2, 1) = \frac{3!}{2! 1!} = \binom{3}{1}" /></center>
+podobně počet trojic s jedním prvkem $$a$$ a dvěma prvky $$b$$ je:
+<center><Latex formula="P'(1, 2) = \frac{3!}{1! 2!} = \binom{3}{2}" /></center>
+Trojice obsahující tři prvky $$a$$ je jen jedna, stejně tak trojice obsahující tři prvky $$b$$. Platí tedy:
+<center><Latex formula="\displaystyle (a + b)^n = a^n + \binom{n}{1} a^{n - 1}b + \binom{n}{2} a^{n - 2}b^2 + \cdots + \binom{n}{k} a^{n - k}b^k + \cdots + \binom{n}{n - 1} ab^{n - 1} + \binom{n}{n} b^n" /></center>
+Protože platí $$1 = \binom{n}{0}$$ a také $$1 = \binom{n}{n}$$, dostáváme:
+<center><Latex formula="\displaystyle (a + b)^n = \binom{n}{0} a^n + \binom{n}{1} a^{n - 1}b + \binom{n}{2} a^{n - 2}b^2 + \cdots + \binom{n}{k} a^{n - k}b^k + \cdots + \binom{n}{n - 1} ab^{n - 1} + \binom{n}{n} b^n" /></center>
+### Příklady
+Vypočítejte $$(1.01)^6$$ použitím binomické věty
+V našem případě $$a = 1$$ a $$b = 0.01$$ a $$n = 6$$ tedy
+<center><Latex formula="\displaystyle (1 + 0.01)^6 = \sum_{k = 0}^6 \binom{6}{k} (1)^{6 - k} (0.01)^k" /></center>
+Dosadíme konkrétní hodnoty a vypočítáme jednotlivé členy (bez násobků deseti):
+<center><Latex formula="\displaystyle \binom{6}{0} (1)^6 (0.01)^0 = 1" /></center>
+<center><Latex formula="\displaystyle \binom{6}{1} (1)^5 (0.01)^1 = 6 \cdot 1 \cdot 0.01 = 0.06" /></center>
+<center><Latex formula="\displaystyle \binom{6}{2} (1)^4 (0.01)^2 = 15 \cdot 1 \cdot 0.0001 = 0.0015" /></center>
+<center><Latex formula="\displaystyle \binom{6}{3} (1)^3 (0.01)^3 = 20 \cdot 1 \cdot 0.000001 = 0.00002" /></center>
+<center><Latex formula="\displaystyle \binom{6}{4} (1)^2 (0.01)^4 = 15 \cdot 1 \cdot 0.00000001 = 0.00000015" /></center>
+<center><Latex formula="\displaystyle \binom{6}{5} (1)^1 (0.01)^5 = 6 \cdot 1 \cdot 0.0000000001 = 0.0000000006" /></center>
+<center><Latex formula="\displaystyle \binom{6}{6} (1)^0 (0.01)^6 = 1 \cdot 1 \cdot 0.000000000001 = 0.000000000001" /></center>
+Dosadíme konkrétní hodnoty a vypočítáme jednotlivé členy (bez s násobky deseti):
+<center><Latex formula="\displaystyle \binom{6}{0} (1)^6 (10^{-2})^0 = 1" /></center>
+<center><Latex formula="\displaystyle \binom{6}{1} (1)^5 (10^{-2})^1 = 6 \cdot 1 \cdot 10^{-2} = 6 \cdot 10^{-2}" /></center>
+<center><Latex formula="\displaystyle \binom{6}{2} (1)^4 (10^{-2})^2 = 15 \cdot 1 \cdot 10^{-4} = 15 \cdot 10^{-4}" /></center>
+<center><Latex formula="\displaystyle \binom{6}{3} (1)^3 (10^{-2})^3 = 20 \cdot 1 \cdot 10^{-6} = 20 \cdot 10^{-6}" /></center>
+<center><Latex formula="\displaystyle \binom{6}{4} (1)^2 (10^{-2})^4 = 15 \cdot 1 \cdot 10^{-8} = 15 \cdot 10^{-8}" /></center>
+<center><Latex formula="\displaystyle \binom{6}{5} (1)^1 (10^{-2})^5 = 6 \cdot 1 \cdot 10^{-10} = 6 \cdot 10^{-10}" /></center>
+<center><Latex formula="\displaystyle \binom{6}{6} (1)^0 (10^{-2})^6 = 1 \cdot 1 \cdot 10^{-12} = 10^{-12}" /></center>
+
+Dostáváme tedy finální součet a to 
+<center><Latex formula="\displaystyle (1+10^{−2})^6 = 1+6 \cdot 10^{−2} + 15 \cdot 10^{−4} + 20 \cdot 10^{−6} + 15 \cdot 10^{−8} + 6 \cdot 10^{−10} + 10^{−12} = 1.061520150601" /></center>
