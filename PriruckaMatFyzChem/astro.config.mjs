@@ -378,6 +378,9 @@ export default defineConfig({
             items: [{
               label: "Substituční metoda",
               link: "matematika/matematickaanalyza/integralnipocet/substitucnimetoda"
+            }, {
+              label: "Integrály s proměnnou pod odmocninou",
+              link: "matematika/matematickaanalyza/integralnipocet/integralyspromennoupododmocninou"
             }]
           }, {
             label: "Parciální zlomky",

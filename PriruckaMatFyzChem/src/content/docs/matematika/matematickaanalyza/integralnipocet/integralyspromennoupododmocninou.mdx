@@ -1,0 +1,24 @@
+---
+title: Integrály s proměnnou pod odmocninou
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+### Úvod 
+Integrály s proměnnou pod odmocninou jsou integrály, které obsahují libovolnou $$n$$-tou odmocninu kde $$n \in \N$$
+<center><Latex formula="R(\sqrt[n]{x})" /></center>
+Tyto integrály řešíme substitucí, kdy za x zvolíme proměnnou, která má vždy stejnou mocninu aby se s odmocninou vyrušila
+
+### Příklad
+
+<center><Latex formula="\displaystyle \int \frac{\sqrt{x}}{\sqrt{x} - 1} \mathrm{d}x" /></center>
+Zvolíme substituci 
+<center><Latex formula="\displaystyle \int \frac{\sqrt{x}}{\sqrt{x} - 1} \mathrm{d}x = \bigg| \begin{aligned} x = t^2 \\ \mathrm{d}x = 2t \mathrm{d}t \end{aligned} \bigg| = \int \frac{\sqrt{t^2}}{\sqrt{t^2} - 1} 2t \mathrm{d}t = \int \frac{2t^2}{t - 1} \mathrm{d}t" /></center>
+Daný integrál už můžeme vyřešit pomocí rozkladu na parciální zlomky nebo následujícím způsobem
+<center><Latex formula="\displaystyle \int \frac{2(t - 1 + 1)^2}{t - 1} \mathrm{d}t" /></center>
+Nyní zvolíme další substituci 
+<center><Latex formula="\displaystyle \int \frac{2(t - 1 + 1)^2}{t - 1} \mathrm{d}t = \bigg| \begin{aligned} u = t - 1 \\ \mathrm{d}u = \mathrm{d}t \end{aligned} \bigg| = \int \frac{2(u + 1)^2}{u} \mathrm{d}t" /></center>
+<center><Latex formula="\displaystyle \int \frac{2(u^2 + 2u + 1)}{u} \mathrm{d}u = \int \frac{2u^2 + 4u + 2}{u} \mathrm{d}u = \\ \int \frac{2u^2}{u} + \frac{4u}{u} + \frac{2}{u} \mathrm{d}u = \int \frac{2u^2}{u} \mathrm{d}u + \int \frac{4u}{u} \mathrm{d}u + \int \frac{2}{u} \mathrm{d}u =" /></center>
+<center><Latex formula="\displaystyle \int 2u \mathrm{d}u + \int 4 \mathrm{d}u + \int \frac{2}{u} \mathrm{d}u" /></center>
+<center><Latex formula="\displaystyle \frac{2u^2}{2} + 4u + 2 \ln | u | + c = u^2 + 4u + 2 \ln | u | + c = \\ (t - 1)^2 + 4(t - 1) + 2 \ln | t - 1 | + c = " /></center>
+<center><Latex formula="\displaystyle t^2 - 2t + 1 + 4t - 4 + 2 \ln |t - 1| + c = \\ t^2 + 2t - 3 + 2 \ln | t - 1 | + c = \\ x + 2 \sqrt{x} - 3 + 2 \ln |\sqrt{x} - 1 | + c , c \in \Reals" /></center>
