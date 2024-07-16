@@ -373,6 +373,12 @@ export default defineConfig({
               label: "Metoda per partes",
               link: "matematika/matematickaanalyza/integralnipocet/metodaperpartes"
             }]
+          },{
+            label: "Substituční metoda a substituce",
+            items: [{
+              label: "Substituční metoda",
+              link: "matematika/matematickaanalyza/integralnipocet/substitucnimetoda"
+            }]
           }, {
             label: "Parciální zlomky",
             items: [{

@@ -1,0 +1,37 @@
+---
+title: Substituční metoda
+---
+
+import Latex from "../../../../../components/Latex.astro";
+
+Substituční metoda, nebo metoda substituce, je technika používaná v integrálním počtu k usnadnění integrace funkcí.
+
+1. Výběr substituce
+Začneme výběrem vhodné substituce. Obvykle se snažíme nahradit složitý výraz jednodušším, například obecně:
+<center><Latex formula="t = g(x)" /></center>
+2. Derivace substituce
+Nyní spočítáme derivaci substituční funkce s ohledem na $$x$$:
+<center><Latex formula="\displaystyle \frac{\mathrm{d}t}{\mathrm{d}x} = g'(x)" /></center>
+3. Vyjádříme $$\mathrm{d}x$$
+<center><Latex formula="\displaystyle \mathrm{d}x = \frac{\mathrm{d}t}{g'(x)}" /></center>
+4. Přepis integrálu
+Následně přepíšeme původní integrál pomocí nové proměnné $$t$$ Poté integrál už rešíme v proměnné $$t$$
+<center><Latex formula="\displaystyle \int f(g(x)) g'(x) \mathrm{d}x = \int f(t) \mathrm{d}t" /></center>
+
+5. Vrácení substituce 
+Nakonec vrátíme výsledek do původní proměnné $$x$$ pomocí substituce $$t = g(x)$$.
+
+### Příklad
+<center><Latex formula="\displaystyle \int 2x e^{x^2} \mathrm{d}x" /></center>
+<details>
+<summary>Řešení</summary>
+Nejprve si zvolíme substituci
+<center><Latex formula="t = x^2" /></center>
+<center><Latex formula="\mathrm{d}t = 2x \mathrm{d}x" /></center>
+<center><Latex formula="\displaystyle \mathrm{d}x = \frac{\mathrm{d}t}{2x}" /></center>
+Přepíšeme si integrál nezapomeňte nahradit za $$\mathrm{d}x$$ 
+<center><Latex formula="\displaystyle \int 2x e^{x^2} \mathrm{d}x = \int 2x e^t \frac{\mathrm{d}t}{2x} = \int \cancel{2x} e^t \frac{\mathrm{d}t}{\cancel{2x}}" /></center>
+<center><Latex formula="\displaystyle \int  e^t \mathrm{d}t = e^t + c" /></center>
+Nakonec vrátíme zpět substituci
+<center><Latex formula="\displaystyle \int  e^t \mathrm{d}t = e^{x^2} + c, c \in \Reals" /></center>
+</details>
